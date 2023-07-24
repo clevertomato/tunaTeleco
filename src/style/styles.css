@@ -1,0 +1,432 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .border-right-top-right {
+    position: relative;
+  }
+  .border-right-top-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 2px;
+    background-color: white;
+  }
+  .border-right-top-right::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 25%;
+    background-color: white;
+  }
+  .border-right-top-right2 {
+    position: relative;
+  }
+  .border-right-top-right2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+  }
+  .border-right-top-right2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 20%;
+    background-color: white;
+  }
+  .border-left-bottom-left {
+    position: relative;
+  }
+  .border-left-bottom-left::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 2px;
+    background-color: white;
+  }
+  .border-left-bottom-left::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 25%;
+    background-color: white;
+  }
+  .border-left-bottom-left2 {
+    position: relative;
+  }
+  .border-left-bottom-left2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+  }
+  .border-left-bottom-left2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 20%;
+    background-color: white;
+  }
+  .border-b-3 {
+    border-bottom-width: 3px;
+  }
+  .satelliteanimation{
+    padding: 20%;
+    width: 100%;
+    height: 100%;
+    /* Adjust the position to center the element within its container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation: diagonal-move-anim 30s linear infinite;
+  }
+  .noteanimation{
+    padding: 20%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  .noteanimation_note {
+    animation: bounce 1.6s linear infinite;
+  }
+  .duration-400 {
+    transition-duration: 400ms;
+  }
+  .border-3 {
+    border-width: 3px;
+  }
+  .inside {
+    max-width: 50%;
+    width: auto;
+  }
+}
+
+/**********OWN  CLASSES*********/
+:root {
+  --orange400: #F9B555;
+  --orange800: #B1570F;
+  --purple400: #C9B7E8;
+
+}
+.letter-spacing-011{
+  letter-spacing: 0.11em;
+}
+.navSize{
+  height: 8%;
+}
+.ml--100{
+  margin-left: -100%;
+}
+.shadowtext{
+  text-shadow: 1px 2px 2px black;
+}
+.shadowtextwhite{
+  text-shadow: 1px 1px 2px white;
+}
+.shadowtextblackonwhite{
+  text-shadow: 1px 1px 2px black;
+}
+.shadowtexthover:hover{
+  text-shadow: 1px 1px 2px black;
+}
+
+.linear-bg{
+  background-image: linear-gradient(to bottom, rgba(120, 118, 118, 0.1), rgba(31, 31, 31, 0.5)), url('../img/telecofondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  bottom: 0;
+}
+.quienes-bg{
+  background-image: url('../img/peaks-bg2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.celebraciones-bg{
+  background-image: url('../img/bg-purple2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.quienes-img{
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecofondo1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.animate-changeBackground {
+  animation-name: changeBackground;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+.animate-changeBackground-not-active {
+  animation-name: changeBackgroundNotActive;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+.animated-background {
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.translate-item{
+  transform: translateX(12.5%) translateY(15%);
+}
+.animate-opacityText {
+  animation-name: changeOpacityText;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.animate-opacityText-not-active {
+  animation-name: changeOpacityTextNotActive;
+  animation-duration: 0s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+.background-item {
+  background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/telecoactos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-img{
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/UPV.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.note1-img{
+  background-image: url('../img/note1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33.33%;
+}
+.note2-img{
+  background-image:  url('../img/note2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33.33%;
+}
+.note3-img{
+  background-image: url('../img/note3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33.33%;
+}
+.h-notes1{
+height: 10%;
+}
+.h-notes2{
+  height: 10%;
+}
+.h-notes3{
+  height: 8%;
+}
+.backgroundfixed{
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url('../img/escenario.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  
+}
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px); 
+}
+.satelliteshadow{
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.h-70-screen{
+  height: 100%;
+}
+.text-quienes{
+  width: 90%;
+}
+.h-quienes{
+  height: 80vh;
+  min-height: 550px;
+}
+.h-valores{
+  height: 50vh;
+  min-height: 350px;
+}
+.h-main{
+  height: 100%;
+  min-height: 550px;
+}
+.h-quienes-text{
+  height: 90vh;
+}
+
+.guitarNoteClr{fill:black;}
+.wrapper{
+  width:100%;
+  max-width:522px;
+  height:560px;
+  text-align:center;
+  margin:0 auto;
+}
+
+@layer components {
+  .active {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 736px ) {
+  .text-quienes{
+    width: 100%;
+  }
+  .h-quienes{
+    height: auto;
+    max-height: 1230px;
+  }
+  .h-valores{
+    height: auto;
+    max-height: 1230px;
+  }
+  .h-70-screen{
+    height: 550px;
+  }
+  .quienes-bg{
+    background-color: var(--orange400);
+  }
+}
+
+@media only screen and (max-width: 768px ) {
+  .text-quienes{
+    width: 100%;
+  }
+  .h-quienes{
+    height: auto;
+    max-height: 2500px;
+  }
+  .h-valores{
+    height: auto;
+    max-height: 2500px;
+  }
+  .h-70-screen{
+    height: 500px;
+  }
+  .quienes-bg{
+    background-color: var(--orange400);
+  }
+
+}
+.valores-text{
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+
+.cajatexto{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Archivo", "Archivo Placeholder", sans-serif;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+@keyframes diagonal-move-anim {
+
+  0% {
+    transform: rotate(0deg) translateX(30px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) rotate(0deg);
+  }
+
+}
+@-webkit-keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-50px);} 
+  60% {-webkit-transform: translateY(-20px);} 
+} 
+
+@keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-80px);} 
+  60% {transform: translateY(-45px);} 
+}
+
+@keyframes changeBackground {
+  from {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+  }
+  to {
+    background-image: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url('../img/telecoactos.jpg');
+  }
+}
+
+@keyframes changeBackgroundNotActive {
+  from {
+    background-image: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url('../img/telecoactos.jpg');
+  }
+  to {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+  }
+}
+
+@keyframes changeOpacityText {
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity:100%;
+  }
+}
+
+@keyframes changeOpacityTextNotActive {
+from{
+  opacity: 100%;
+}
+to{
+  opacity: 0%;
+}
+}
