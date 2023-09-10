@@ -29,22 +29,22 @@ function Contacto() {
           <div className="lg:col-span-2">
             <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5 ">
               <div className="md:col-span-5">
-                <label className='text-white text-lg' for="full_name">Nombre:</label>
+                <label className='text-white text-lg'>Nombre:</label>
                 <input type="text" name="full_name" id="full_name" className="h-10 border mt-1 rounded-sm px-4 w-full bg-gray-50" required />
               </div>
 
               <div className="md:col-span-5">
-                <label className='text-white text-lg' for="email">Correo:</label>
+                <label className='text-white text-lg'>Correo:</label>
                 <input type="email" name="email" id="email" className="h-10 border mt-1 rounded-sm px-4 w-full bg-gray-50" required />
               </div>
               
               <div className="md:col-span-5">
-                <label className='text-white text-lg' for="tel">Teléfono:</label>
+                <label className='text-white text-lg'>Teléfono:</label>
                 <input type="tel" name="tel" id="tel" className="h-10 border mt-1 rounded-sm px-4 w-full bg-gray-50" placeholder="Opcional" />
               </div>
 
               <div className="md:col-span-5 ">
-                <label className='text-white text-lg' for="email">Mensaje:</label>
+                <label className='text-white text-lg'>Mensaje:</label>
                 <textarea name="text" rows={4} className="border mt-1 mb-2 rounded-sm px-4 w-full bg-gray-50 required"/>
               </div>
       
