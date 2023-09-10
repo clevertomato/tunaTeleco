@@ -129,6 +129,24 @@
     max-width: 50%;
     width: auto;
   }
+  .ml--100{
+    margin-left: -100%;
+  }
+  .ml--50{
+    margin-left: -50%;
+  }
+  .quienes-bg{
+    background-image: url('../img/peaks-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+  .form-bg{
+    background-image: url('../img/peaks-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
 }
 
 /**********OWN  CLASSES*********/
@@ -144,9 +162,7 @@
 .navSize{
   height: 8%;
 }
-.ml--100{
-  margin-left: -100%;
-}
+
 .shadowtext{
   text-shadow: 1px 2px 2px black;
 }
@@ -168,8 +184,8 @@
   height: 100%;
   bottom: 0;
 }
-.quienes-bg{
-  background-image: url('../img/peaks-bg2.png');
+.contacto-bg{
+  background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)), url('../img/telecofondo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
@@ -186,15 +202,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.animate-changeBackground {
-  animation-name: changeBackground;
-  animation-duration: 0.8s;
+.animate-changeBackground-resize {
+  animation-name: changeBackgroundResize;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
   animation-fill-mode: forwards;
 }
-.animate-changeBackground-not-active {
-  animation-name: changeBackgroundNotActive;
-  animation-duration: 0.8s;
+.animate-changeBackground-not-active-resize {
+  animation-name: changeBackgroundNotActiveResize;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
   animation-fill-mode: forwards;
 }
@@ -204,6 +220,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .translate-item{
   transform: translateX(12.5%) translateY(15%);
 }
@@ -284,6 +301,12 @@ height: 10%;
 .h-quienes{
   height: 80vh;
   min-height: 550px;
+  max-height: 2000px;
+}
+.h-contacto{
+  height: 100vh;
+  min-height: 550px;
+  max-height: 2000px;
 }
 .h-valores{
   height: 50vh;
@@ -350,7 +373,9 @@ height: 10%;
   .quienes-bg{
     background-color: var(--orange400);
   }
-
+  .translate-item{
+    transform: translateX(0%) translateY(0%);
+  }
 }
 .valores-text{
   letter-spacing: 0.3em;
@@ -395,21 +420,27 @@ height: 10%;
   60% {transform: translateY(-45px);} 
 }
 
-@keyframes changeBackground {
+@keyframes changeBackgroundResize {
   from {
     background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+    border-width: 2px;
+    border-color:white;
   }
   to {
-    background-image: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url('../img/telecoactos.jpg');
+    background-image: none;
+    border-width: 0px;
   }
 }
 
-@keyframes changeBackgroundNotActive {
+@keyframes changeBackgroundNotActiveResize {
   from {
-    background-image: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url('../img/telecoactos.jpg');
+    background-image: none;
+    border-width: 0px;
   }
   to {
     background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+    border-width: 2px;
+    border-color:white;
   }
 }
 

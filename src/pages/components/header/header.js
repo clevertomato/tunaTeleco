@@ -18,9 +18,9 @@ export default function Header({ showNav }) {
         <div className='text-md md:text-3xl lg:text-4xl 3xl:text-4xl text-white px-4 py-2 float-right transform transition-all duration-300 shadow-sm hover:shadow-none shadow-gray-300 hover:cursor-pointer hover:bg-white/90 font-light hover:text-black rounded-sm ease-in-out border-3 border-white ml-4'>@TUNATELECO</div>
         </div>  
         <ul className='py-4 px-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm lg:text-xl text-black/70 font-normal '>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-black transition-all duration-400 hover:cursor-pointer'>CONTACTO</li>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-black transition-all duration-400 ease-in-out hover:cursor-pointer'>CANCIONERO</li>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-black transition-all duration-400  hover:cursor-pointer'>HISTORIA</li>
+          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange transition-all duration-400 hover:cursor-pointer'>CONTACTO</li>
+          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange transition-all duration-400 ease-in-out hover:cursor-pointer'>CANCIONERO</li>
+          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange transition-all duration-400  hover:cursor-pointer'>HISTORIA</li>
           <li><Image
               src={logoupv}
               width={80}
