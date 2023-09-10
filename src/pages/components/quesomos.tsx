@@ -22,6 +22,7 @@ export default function Quesomos() {
                 <div className='satelliteanimation'>
                 <Image
                 src={satellite}
+                alt="satellite"
                 style={{ width: '20%', height:'20%', objectFit:'contain', filter: 'drop-shadow(4px 4px 4px #222)'}} // optional
                 />
                 </div>

@@ -95,6 +95,7 @@ export default function Celebraciones() {
                         <div className='border-2 border-white py-2 px-4 '>
                           <Image
                           src={leftarrow}
+                          alt="arrow"
                           style={{ width: '30px', height:'30px', objectFit:'cover', border: '2px', borderColor:'white'}} // optional
                           />
                         </div>
@@ -114,6 +115,7 @@ export default function Celebraciones() {
                         <div className='border-2 border-white py-2 px-4 '>
                           <Image
                           src={leftarrow}
+                          alt="arrow"
                           style={{ width: '30px', height:'30px', objectFit:'cover', border: '2px', borderColor:'white'}} // optional
                           />
                         </div>
@@ -133,6 +135,7 @@ export default function Celebraciones() {
                         <div className='border-2 border-white py-2 px-4 '>
                           <Image
                           src={leftarrow}
+                          alt="arrow"
                           style={{ width: '30px', height:'30px', objectFit:'cover', border: '2px', borderColor:'white'}} // optional
                           />
                         </div>
@@ -152,6 +155,7 @@ export default function Celebraciones() {
                         <div className='border-2 border-white py-2 px-4 '>
                           <Image
                           src={leftarrow}
+                          alt="arrow"
                           style={{ width: '30px', height:'30px', objectFit:'cover', border: '2px', borderColor:'white'}} // optional
                           />
                         </div>

@@ -25,6 +25,7 @@ export default function Header({ showNav }) {
               src={logoupv}
               width={80}
               height={80}
+              alt="logoupv"
               style={{  paddingRight: '1.5rem'}} // optional
         /></li>
         </ul>

@@ -11,6 +11,7 @@ export default function Valores() {
                 <div className='h-full w-1/2 md:auto flex flex-col '>
                 <Image
                         src={logoupv}
+                        alt="logoupv"
                         width={110}
                         height={110}
                         style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
@@ -23,6 +24,7 @@ export default function Valores() {
                 <div className='h-full w-1/2 md:auto flex flex-col '>
                     <Image
                         src={logoupv}
+                        alt="logoupv"
                         width={110}
                         height={110}
                         style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
@@ -37,6 +39,7 @@ export default function Valores() {
             <div className='h-full w-1/2 md:auto flex flex-col '>
                     <Image
                         src={logoupv}
+                        alt="logoupv"
                         width={110}
                         height={110}
                         style={{ marginLeft: 'auto', marginRight: 'auto'}}></Image>
@@ -49,6 +52,7 @@ export default function Valores() {
                 <div className='h-full w-1/2 md:auto flex flex-col '>
                     <Image
                         src={logoupv}
+                        alt="logoupv"
                         width={110}
                         height={110}
                         style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
