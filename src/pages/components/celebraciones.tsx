@@ -74,7 +74,6 @@ export default function Celebraciones() {
                 src={leftarrow}
                 style={{ width: '60px', height:'60px', objectFit:'cover'}}
                 alt="coverbg"
-                // optional
                 />
             </div>
         </div>
