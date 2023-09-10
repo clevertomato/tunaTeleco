@@ -72,7 +72,8 @@ export default function Celebraciones() {
             <div className={`${active ? 'opacity-0 md:opacity-100 md:bg-black/30' : 'md:opacity-0 pointer-events-none'} h-full top-0 right-0 absolute w-full hover:cursor-pointer transition-all ease-in-out delay-300 duration-300  z-30 text-white flex flex-row items-center justify-end pr-8`} onClick={clickActive}>
                 <Image
                 src={leftarrow}
-                style={{ width: '60px', height:'60px', objectFit:'cover'}} // optional
+                alt="coverbg"
+                style={{ width: '60px', height:'60px', objectFit:'cover'} } // optional
                 />
             </div>
         </div>
