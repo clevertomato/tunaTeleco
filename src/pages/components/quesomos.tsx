@@ -43,13 +43,17 @@ export default function Quesomos() {
             </Slide>
             </div>
         </div>
-        <Slide right duration={1500}>
+        <Slide right duration={1000}>
             <p className='md2:hidden px-8 pb-4 grid place-content-center letter-spacing-011 text-center'>La Tuna Universitaria de Ingenieros de Telecomunicaciones de Valencia es una agrupación formada en el año 1992. Desde el principio estos tunos ingenieros entonan melodías tradicionales y contemporáneas, acompañados de guitarras, bandurrias, laúdes y otros instrumentos característicos de la tuna. </p>
         </Slide>
-        <p className='md2:hidden px-8 pb-8 grid place-content-center letter-spacing-011 text-center'>Reconocidos por su participación en eventos académicos, festivales culturales, su atuendo distintivo y su energía contagiosa, que los convierten en un símbolo de la tradición y avanguardia en Valencia.</p>
-        <div className='md2:hidden px-8 grid place-content-center md:-mt-2 pt-2 pb-8 md:py-0'>
-                <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>Te arreglamos el wifi y te tocamos una canción</p>
-        </div>
+        <Slide right duration={1000}>
+            <p className='md2:hidden px-8 pb-8 grid place-content-center letter-spacing-011 text-center'>Reconocidos por su participación en eventos académicos, festivales culturales, su atuendo distintivo y su energía contagiosa, que los convierten en un símbolo de la tradición y avanguardia en Valencia.</p>
+        </Slide>
+        <Slide right duration={1000}>
+            <div className='md2:hidden px-8 grid place-content-center md:-mt-2 pt-2 pb-8 md:py-0'>
+                    <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>Te arreglamos el wifi y te tocamos una canción</p>
+            </div>
+        </Slide>
     </div>
 
   )

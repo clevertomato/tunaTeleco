@@ -72,11 +72,12 @@
     bottom: 0;
     right: 0;
     width: 2px;
-    height: 25%;
+    height: 20%;
     background-color: white;
   }
   .border-left-bottom-left2 {
     position: relative;
+    
   }
   .border-left-bottom-left2::before {
     content: "";

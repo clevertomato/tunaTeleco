@@ -53,29 +53,41 @@ export default function Celebraciones() {
 
   return (
     <div className={`${active ? 'md:ml--100 md:ml-0' : ''}  h-quienes w-auto celebraciones-bg flex flex-col md:flex-row overflow-hidden transition-all ease-in-out delay-300 duration-500 border-b-2 border-white `}>
-
-        <div className='h-full w-full md:w-4/6 sm:text-sm md:text-sm md3:text-base xl:text-xl 3xl:text-3xl flex flex-col justify-between relative'>
-            <div className={`${active ? 'md:ml--100 md:m-0' : ''} h-full w-full px-8 md3:pl-28 md:pr-0 md:py-8 lg:absolute z-10 flex flex-col justify-between transition-all ease-in-out delay-300 duration-500 `}>
-            <Slide left duration={1500}><div className='grid place-content-center py-8 md:py-0'>
+      <div className='h-full w-full md:w-4/6 px-8 md3:pl-28 md:pr-0 md:py-8'>
+        <div className='h-full w-full  sm:text-sm md:text-sm md3:text-base xl:text-xl 3xl:text-3xl flex flex-col relative md:border-left-bottom-left2 3xl:border-left-bottom-left'>
+            <div className={`${active ? 'md:ml--100 md:m-0' : ''} h-full w-full pb-0 md:pb-4  lg:absolute z-10 flex flex-col justify-between transition-all ease-in-out delay-300 duration-500 `}>
+              <Slide left duration={1500}>
+                <div className='grid place-content-center py-8 md:py-0 pb-4'>
                     <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>¿Quieres hacer que tu evento o celebración sea inolvidable?</p>
-                </div></Slide>
-            <div className='md:border-left-bottom-left2 3xl:border-left-bottom-left h-full lg:h-5/6 grid place-content-center gap-4 md:gap-8 3xl:gap-16  sm:w-full md:w-full text-center pb-4 px-2 md:p-8 3xl:px-16 text-quienes sm:text-sm md:text-sm md3:text-lg lg:text-xl 3xl:text-3xl'>
-            <Slide left duration={1500}><p className='grid place-content-center letter-spacing-011'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo. </p></Slide>
-            <Slide left duration={1000}><p className='grid place-content-center letter-spacing-011 mb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p></Slide>
-            <div className='md:flex items-center justify-between w-full '>
+                </div>
+              </Slide>
+              <Slide left duration={1000}>
+                <p className='text-center px-8 hidden md2:grid place-content-center letter-spacing-011'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo. </p>
+              </Slide>
+              <Slide left duration={1000}>
+                <p className='md2:hidden pb-4 grid place-content-center letter-spacing-011 text-center pt-4'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo.</p>
+              </Slide>
+              <Slide left duration={1000}>
+                <p className='text-center px-8 hidden md2:grid place-content-center letter-spacing-011 mb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
+              </Slide>
+              <Slide left duration={1000}>
+                <p className='md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
+              </Slide>
+              <div className='flex items-center justify-between w-full pb-4'>
                 <button className='text-center py-2 px-6 border-3 border-white text-white rounded-sm mx-auto' onClick={clickActive}>
-                    Información sobre Eventos
+                      Información sobre Eventos
                 </button>
+              </div>
             </div>
-            </div>
-            </div>
-            <div className={`${active ? 'opacity-0 md:opacity-100 md:bg-black/30' : 'md:opacity-0 pointer-events-none'} h-full top-0 right-0 absolute w-full hover:cursor-pointer transition-all ease-in-out delay-300 duration-300  z-30 text-white flex flex-row items-center justify-end pr-8`} onClick={clickActive}>
+            
+            <div className={`${active ? 'opacity-0 md:opacity-100 md:bg-black/30' : 'md:opacity-0 pointer-events-none'} h-full top-0 right-0 absolute w-full hover:cursor-pointer transition-all ease-in-out delay-300 duration-300  z-30 text-white hidden md:flex flex-row items-center justify-end pr-8`} onClick={clickActive}>
                 <Image
                 src={leftarrow}
                 style={{ width: '60px', height:'60px', objectFit:'cover'}}
                 alt="coverbg"
                 />
             </div>
+        </div>
         </div>
         <div ref={boxServicios} className='h-full py-8 px-8 md:pl-16 md3:pr-28 md w-full md:w-1/2 relative overflow-y-hidden overflow-x-hidden'>
         <div className={`${active ? 'animate-changeBackground-resize ' : ' animate-changeBackground-not-active-resize border-2 border-white'} animated-background rounded-sm h-70-screen relative`}>
