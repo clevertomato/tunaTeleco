@@ -15,7 +15,7 @@ export default function Header({ showNav }) {
     <div id='navBar' className={`${!showNav ? 'opacity-0' : 'opacity-100 '}  z-20  top-0 right-0 w-full transition-all ease-in-out delay-300 duration-500 absolute `}>
       <div className='hidden md:flex items-center justify-between w-full'>
         <div>
-        <div className='text-md md:text-3xl lg:text-4xl 3xl:text-4xl text-black px-4 py-2 float-right transform transition-all duration-300 shadow-sm shadow-gray-300 hover:cursor-pointer font-light  rounded-sm ease-in-out border-3 border-white hover:border-my-orange hover:shadow-sm ml-4'>@TUNATELECO</div>
+        <div className='text-md md:text-3xl lg:text-4xl 3xl:text-4xl text-black px-4 py-2 float-right transform transition-all duration-400 hover:cursor-pointer font-normal  rounded-sm ease-in-out border-3 border-white hover:border-my-orange hover:shadow-gray-400 hover:shadow-sm ml-4'>@TUNATELECO</div>
         </div>  
         <ul className='py-4 px-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm lg:text-xl text-black/70 font-normal '>
           <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 hover:cursor-pointer'>CONTACTO</li>

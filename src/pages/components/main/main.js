@@ -8,7 +8,7 @@ function Main() {
   // Function to update the height when the window is resized
   const updateHeight = () => {
     if (typeof window !== 'undefined') {
-      setDivHeight(window.innerHeight*0.92);
+      setDivHeight(window.innerHeight);
     }
   };
 
@@ -16,7 +16,7 @@ function Main() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', updateHeight);
-      updateHeight(); // Initialize the height
+      updateHeight(); 
       return () => {
         window.removeEventListener('resize', updateHeight);
       };
@@ -27,22 +27,19 @@ function Main() {
   const divStyle = {
     height: `${divHeight}px` 
   };
+  const divStyle2 = {
+    height: `90%` 
+  };
 
   return (
-    <div className='h-main w-auto z-0 relative' >
-      <div className='w-full text-center absolute flex flex-row z-10 ' style={divStyle}>
-          <div className='w-full lg:pl-4 md:px-8 text-white text-center absolute bottom-0 left-0 grid place-content-center py-8 md:hidden'>
-              <div className='text-2xl md:text-4xl lg:text-5xl cajatexto overflow-hidden shadowtext text-center border-2 border-x-0'>la TUNA de</div>
-              <div className='text-2xl md:text-4xl lg:text-5xl cajatexto overflow-hidden shadowtext text-center border-b-2'>Ingenieros</div>
-              <div className='sm:text-lg md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-b-2 py-1'>de TELECOMUNICACIONES</div>
-          </div>
-      </div>
-      <div className='hidden h-full w-full text-center absolute md:flex flex-row z-10'>
+    <div className='w-auto z-0 relative' style={divStyle}>
+      <div className='h-full w-full text-center absolute flex flex-row z-10'>
           <div className='w-full lg:pl-4 md:px-8 text-white text-center absolute bottom-0 left-0 grid place-content-center py-8'>
               <div className='text-2xl md:text-4xl lg:text-5xl cajatexto overflow-hidden shadowtext text-center border-2 border-x-0'>la TUNA de</div>
               <div className='text-2xl md:text-4xl lg:text-5xl cajatexto overflow-hidden shadowtext text-center border-b-2'>Ingenieros</div>
               <div className='sm:text-lg md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-b-2 py-1'>de TELECOMUNICACIONES</div>
           </div>
+          
       </div>
       <div className='h-full bottom-0 w-full flex flex-col rounded-md '>
           <div className='w-full linear-bg absolute z-0'></div>

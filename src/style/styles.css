@@ -186,11 +186,12 @@
   bottom: 0;
 }
 .contacto-bg{
-  background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)), url('../img/telecofondo2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/telecofondo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
 }
+
 .celebraciones-bg{
   background-image: url('../img/bg-purple2.png');
   background-size: cover;
@@ -306,8 +307,12 @@ height: 10%;
 }
 .h-contacto{
   height: 100vh;
-  min-height: 550px;
+  min-height: 650px;
   max-height: 2000px;
+}
+.h-contacto-form{
+    min-height: 225px;
+    max-height: 3000px;
 }
 .h-valores{
   height: 50vh;
@@ -354,6 +359,12 @@ height: 10%;
   .quienes-bg{
     background-color: var(--orange400);
   }
+  .h-contacto{
+    height: auto;
+    min-height: 650px;
+    max-height: 2000px;
+  }
+
 }
 
 @media only screen and (max-width: 768px ) {
