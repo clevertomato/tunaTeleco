@@ -5,15 +5,6 @@ import barato from '../../img/barato.png'
 import hodor from '../../img/hodor.png'
 
 function Contacto() {
-  const satStyle = {
-    height: '15%',
-  };
-  const satStyle20 = {
-    height: '20%',
-  };
-  const restStyle = {
-    height: '85%',
-  };
   return (
   <div className="h-contacto w-auto p-6 contacto-bg flex items-center justify-center">
     <div className='h-auto md:h-full w-full flex md:flex-row flex-col gap-8 py-8'>
