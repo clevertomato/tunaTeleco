@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
-import sheeran from '../../img/sheeran.png'
-import barato from '../../img/barato.png'
-import hodor from '../../img/hodor.png'
+import sheeran from '../../img/sheeran2.png'
+import barato from '../../img/barato2.png'
+import hodor from '../../img/hodor2.png'
 
 function Contacto() {
   return (
