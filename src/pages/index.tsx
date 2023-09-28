@@ -5,7 +5,7 @@ import Main from './components/main/main';
 import Quesomos from './components/quesomos';
 import Valores from './components/valores';
 import Celebraciones from './components/celebraciones';
-import Contacto2 from './components/contacto copy';
+import Contacto from './components/contacto';
 
 export default function Home() {
   const [show, setShow] = useState(true);
@@ -17,7 +17,7 @@ export default function Home() {
       <Quesomos/>
       <Valores/>
       <Celebraciones/>
-      <Contacto2/>
+      <Contacto/>
     </div>
   )
 }
