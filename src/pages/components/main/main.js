@@ -5,30 +5,14 @@ function Main() {
   // State variable to store the height
   const [divHeight, setDivHeight] = useState(0); // Initialize with 0
 
-  // Function to update the height when the window is resized
-  const updateHeight = () => {
-    if (typeof window !== 'undefined') {
-      setDivHeight(window.innerHeight);
-    }
-  };
-
   // Add an event listener to update the height on window resize
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', updateHeight);
-      updateHeight(); 
-      return () => {
-        window.removeEventListener('resize', updateHeight);
-      };
-    }
+    setDivHeight(window.innerHeight);
   }, []);
 
   // Style object for the div element
   const divStyle = {
     height: `${divHeight}px` 
-  };
-  const divStyle2 = {
-    height: `90%` 
   };
 
   return (

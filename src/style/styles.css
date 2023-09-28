@@ -148,6 +148,33 @@
     background-repeat: no-repeat;
     background-position: center; 
   }
+  .h-30{
+    height: 30%;
+  }
+  .h-20{
+    height: 20%;
+  }
+  .h-15{
+    height: 15%;
+  }
+  .h-80{
+    height: 80%;
+  }
+  .h-90{
+    height: 90%;    
+    }
+  .h-60{
+    height: 60vh;
+  }
+  .h-70{
+    height: 70vh;
+  }
+  .h-contacto-foto2{
+    height: 150px;
+  }
+  .h-contacto-foto3{
+    height: 75px;
+  }
 }
 
 /**********OWN  CLASSES*********/
@@ -156,6 +183,9 @@
   --orange800: #B1570F;
   --purple400: #C9B7E8;
 
+}
+textarea {
+  resize: none;
 }
 .letter-spacing-011{
   letter-spacing: 0.11em;
@@ -285,7 +315,6 @@ height: 10%;
   background-size: cover;
   background-attachment: fixed;
   height: 50vh;
-  
 }
 .blur {
   background: rgba(255, 255, 255, 0.2);
@@ -306,13 +335,16 @@ height: 10%;
   max-height: 2000px;
 }
 .h-contacto{
-  height: 100vh;
-  min-height: 650px;
+  min-height: 750px;
   max-height: 2000px;
 }
 .h-contacto-form{
-    min-height: 225px;
-    max-height: 3000px;
+  min-height: 490px;
+  max-height: 1500px;
+}
+.h-contacto-foto{
+  height: 130px;
+  max-height: 1500px;
 }
 .h-valores{
   height: 50vh;
@@ -388,7 +420,13 @@ height: 10%;
   .translate-item{
     transform: translateX(0%) translateY(0%);
   }
+  .backgroundfixed{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url('../img/escenario.jpg') no-repeat center;
+    background-size: cover;
+    height: 50vh;
+  }
 }
+
 .valores-text{
   letter-spacing: 0.3em;
   text-indent: 0.3em;
