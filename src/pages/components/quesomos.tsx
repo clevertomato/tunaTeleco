@@ -18,7 +18,7 @@ export default function Quesomos() {
     <div className='h-quienes w-auto quienes-bg flex flex-col md:flex-row overflow-x-hidden border-t-2 border-white overflow-y-hidden '>
         <div className='h-max md:h-full py-8 px-8 md3:pl-28 md:pr-16 md w-full lg:w-1/2 relative'>
             <div className='quienes-img border-2 border-white rounded-sm h-70-screen'></div>
-            <div className='hidden md:block mr-4 pt-16 absolute z-0 right-0 top-0  overflow-y-hidden overflow-x-hidden' style={satStyleMob}>
+            <div className='block pt-16 absolute z-0 right-0 top-0  overflow-y-hidden overflow-x-hidden' style={satStyleMob}>
                 <div className='satelliteanimation'>
                 <Image
                 src={satellite}

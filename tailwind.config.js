@@ -33,6 +33,8 @@ module.exports = {
         'my-purple-800': '#43317D',
         'my-purple-900': '#2D1D68',
         'my-2purple': '#680366',
+        'my-3purple': '#6f0d5a',
+        'my-black2': '#680366',
       },
     },
   },

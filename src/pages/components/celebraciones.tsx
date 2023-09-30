@@ -52,7 +52,7 @@ export default function Celebraciones() {
       };
 
   return (
-    <div className={`${active ? 'md:ml--100 md:ml-0' : ''}  h-quienes w-auto celebraciones-bg flex flex-col md:flex-row overflow-hidden transition-all ease-in-out delay-300 duration-500 border-b-2 border-white `}>
+    <div className={`${active ? 'md:ml--100 md:ml-0' : ''} text-black  h-quienes w-auto celebraciones-bg flex flex-col md:flex-row overflow-hidden transition-all ease-in-out delay-300 duration-500 border-b-2 border-white `}>
       <div className='h-full w-full md:w-4/6 px-8 md3:pl-28 md:pr-0 md:py-8'>
         <div className='h-full w-full  sm:text-sm md:text-sm md3:text-base xl:text-xl 3xl:text-3xl flex flex-col relative md:border-left-bottom-left2 3xl:border-left-bottom-left'>
             <div className={`${active ? 'md:ml--100 md:m-0' : ''} h-full w-full pb-0 md:pb-4  lg:absolute z-10 flex flex-col justify-between transition-all ease-in-out delay-300 duration-500 `}>
@@ -74,7 +74,7 @@ export default function Celebraciones() {
                 <p className='md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
               </Slide>
               <div className='flex items-center justify-between w-full pb-4'>
-                <button className='text-center py-2 px-6 border-2 border-white text-white rounded-sm mx-auto' onClick={clickActive}>
+                <button className='text-center py-2 px-6 border-2 border-white hover:border-my-orange hover:shadow-md transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
                       Información sobre Eventos
                 </button>
               </div>

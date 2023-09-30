@@ -127,6 +127,12 @@
     border-top-width: 3px;
     border-bottom-width: 3px;
   }
+  .border-3 {
+    border-width: 3px;
+  }
+  .delay-400 {
+    transition-delay: 400ms;
+}
   .inside {
     max-width: 50%;
     width: auto;

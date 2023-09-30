@@ -8,12 +8,12 @@ function Contacto() {
   return (
   <div className="h-contacto w-auto contacto-bg flex items-center justify-center">
     <div className='h-contacto-form md:h-auto w-full flex md:flex-row flex-col gap-4 py-4'>
-      <div className='md:w-4/6 flex flex-col justify-between align-middle items-end px-4 md:pr-0 md:py-8'>
+      <div className='md:w-4/6 flex flex-col justify-between align-middle items-end px-8 md:pr-0 md:py-8'>
         <div className='h-full md:w-4/6 3xl:w-3/5 w-full flex flex-col justify-between gap-4'>
-          <div className="text-3xl text-white grid place-content-center w-full mt-4 md:m-0">
-            <h2 className='text-center py-2 border-y-2'>¡Contacta con nosotros!</h2>
+          <div className="text-2xl md:text-3xl text-white grid place-content-center w-full mt-4 md:m-0">
+            <h2 className='text-center p-2 border-y-2'>¡Contacta con nosotros!</h2>
           </div>
-          <div className="h-contacto-form  w-full form-bg border-2 border-white shadow-lg p-4 py-8 md:p-4 grid gap-4 text-sm">
+          <div className="h-contacto-form  w-full form-bg border-2 border-white shadow-lg p-4 grid gap-4 text-sm">
             <div className="w-full h-full">
               <div className="md:h-full flex flex-col justify-between w-full text-sm ">
                 <div className='w-full md:h-full gap-2 flex flex-col justify-between'>
@@ -36,7 +36,7 @@ function Contacto() {
                     </div>
                   </div>
                   <div className="text-right grid place-content-end mt-2">
-                    <button className="border-2 border-white text-white font-bold py-2 px-4  rounded-sm text-xl hover:shadow-md hover:shadow-my-orange-700 hover:border-my-orange hover:bg-slate-50/5 transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
+                    <button className="border-2 border-white text-white font-bold py-2 px-4  rounded-sm text-xl hover:shadow-sm  hover:border-my-3purple transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
                   </div>
                 </div>
               </div>
@@ -45,10 +45,10 @@ function Contacto() {
         </div>
       </div>
       <div className='md:w-1/2 flex flex-col justify-between align-middle items-start py-8 md3:pr-28'>
-        <div className="md2:w-5/6 md3:w-4/6 3xl:w-3/6 w-full flex flex-col items-start h-full gap-4 px-4 ">
+        <div className="md2:w-5/6 md3:w-4/6 3xl:w-3/6 w-full flex flex-col items-start h-full gap-4 px-8 ">
           <div className='w-full'>
-            <div className="text-3xl text-white grid place-content-center w-full">
-              <h2 className='text-center py-2 border-y-2'>¡Llámanos!</h2>
+            <div className="text-2xl md:text-3xl text-white grid place-content-center w-full">
+              <h2 className='text-center p-2 border-y-2'>¡Llámanos!</h2>
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between text-white'>
