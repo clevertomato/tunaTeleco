@@ -182,6 +182,24 @@
   .h-contacto-foto3{
     height: 75px;
   }
+  .transition-display-out{
+    animation: fade-out .1s forwards;
+  }
+  .transition-display-in{
+    animation: fade-in .1s forwards;
+  }
+  @keyframes fade-in {
+    to {
+      display: block;
+      opacity: 100;
+    }
+  }
+  @keyframes fade-out {
+    to {
+      display: none;
+      opacity: 0;
+    }
+  }
 }
 
 /**********OWN  CLASSES*********/

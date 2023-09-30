@@ -61,7 +61,7 @@ export default function Header({ showNav }) {
         </button>
 
       </div>
-      <div className="md:hidden w-full  flex flex-row mt-4 px-2">
+      <div className="md:hidden w-full  flex flex-row mt-4 px-4 pr-6">
         <ul className='w-full h-full text-lg flex flex-row justify-between'>
           <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200 grid place-content-end`}>
             <p className='border-b-2 border-white  pb-1 text-center'>CONTACTO</p>
