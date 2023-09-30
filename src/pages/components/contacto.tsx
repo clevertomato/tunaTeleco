@@ -46,7 +46,7 @@ function Contacto() {
       </div>
       <div className='md:w-1/2 flex flex-col justify-between align-middle items-start py-8 md3:pr-28'>
         <div className="md2:w-5/6 md3:w-4/6 3xl:w-3/6 w-full flex flex-col items-start h-full gap-4 px-4 ">
-          <div className='w-full '>
+          <div className='w-full'>
             <div className="text-3xl text-white grid place-content-center w-full">
               <h2 className='text-center py-2 border-y-2'>¡Llámanos!</h2>
             </div>
