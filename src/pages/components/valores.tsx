@@ -26,7 +26,7 @@ export default function Valores() {
                         style={{ height: '100%', width:'100%', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                     <div className='w-full h-full grid place-content-center'>
                         <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
-                            Fomentar el Folclore
+                            Fomentar el Folcloree
                         </p>
                     </div>
                 </div>
