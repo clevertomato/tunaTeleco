@@ -502,6 +502,7 @@ height: 10%;
   to {
     background-image: none;
     border-width: 0px;
+    
   }
 }
 
@@ -514,6 +515,7 @@ height: 10%;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
     border-width: 2px;
     border-color:white;
+    
   }
 }
 

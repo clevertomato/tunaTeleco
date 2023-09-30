@@ -15,7 +15,7 @@ export default function Valores() {
                 <Image
                         src={logoupv}
                         alt="logoupv"
-                        height={80}
+                        height={70}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
                     <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
@@ -27,7 +27,7 @@ export default function Valores() {
                 <Image
                         src={logoupv}
                         alt="logoupv"
-                        height={80}
+                        height={70}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
                     <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
@@ -39,7 +39,7 @@ export default function Valores() {
                 <Image
                         src={logoupv}
                         alt="logoupv"
-                        height={80}
+                        height={70}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
                     <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
@@ -51,7 +51,7 @@ export default function Valores() {
                 <Image
                         src={logoupv}
                         alt="logoupv"
-                        height={80}
+                        height={70}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
                     <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>

@@ -19,23 +19,23 @@ function Contacto() {
                 <div className='w-full md:h-full gap-2 flex flex-col justify-between'>
                   <div className="w-full">
                     <label className='text-white text-lg'>Nombre:</label>
-                    <input type="text" name="full_name" id="full_name" className="h-10 border mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" required />
+                    <input type="text" name="full_name" id="full_name" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Correo:</label>
-                    <input type="email" name="email" id="email" className="h-10 border mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" required />
+                    <input type="email" name="email" id="email" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Teléfono:</label>
-                    <input type="tel" name="tel" id="tel" className="h-10 border mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" placeholder="*Opcional*" />
+                    <input type="tel" name="tel" id="tel" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" placeholder="*Opcional*" />
                   </div>
                   <div className='flex align-middle w-full h-full'>
                     <div className="w-full h-auto">
                       <label className='text-white text-lg'>Mensaje:</label>
-                      <textarea name="text" rows={7} className="border mt-1 rounded-sm px-4 w-full bg-gray-50 required"/>
+                      <textarea name="text" rows={7} className="pt-1 text-lg text-white bg-black/20 border-2 mt-1 mb-1 rounded-sm px-4 w-full bg-gray-50" required/>
                     </div>
                   </div>
-                  <div className="text-right grid place-content-end mt-2">
+                  <div className="text-right grid place-content-end">
                     <button className="border-2 border-white text-white font-bold py-2 px-4  rounded-sm text-xl hover:shadow-sm  hover:border-my-3purple transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
                   </div>
                 </div>
