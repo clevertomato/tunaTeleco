@@ -123,8 +123,9 @@
   .duration-400 {
     transition-duration: 400ms;
   }
-  .border-3 {
-    border-width: 3px;
+  .border-y-3 {
+    border-top-width: 3px;
+    border-bottom-width: 3px;
   }
   .inside {
     max-width: 50%;
@@ -423,7 +424,6 @@ height: 10%;
   .backgroundfixed{
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url('../img/escenario.jpg') no-repeat center;
     background-size: cover;
-    height: 50vh;
   }
 }
 

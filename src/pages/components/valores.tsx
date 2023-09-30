@@ -12,9 +12,7 @@ export default function Valores() {
                 <Image
                         src={logoupv}
                         alt="logoupv"
-                        width={110}
-                        height={110}
-                        style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        style={{ height: '100%', width:'100%', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                     <div className='w-full h-full grid place-content-center'>
                         <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
                             Mantener la Tradición
@@ -25,9 +23,7 @@ export default function Valores() {
                     <Image
                         src={logoupv}
                         alt="logoupv"
-                        width={110}
-                        height={110}
-                        style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        style={{ height: '100%', width:'100%', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                     <div className='w-full h-full grid place-content-center'>
                         <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
                             Fomentar el Folclore
@@ -40,9 +36,7 @@ export default function Valores() {
                     <Image
                         src={logoupv}
                         alt="logoupv"
-                        width={110}
-                        height={110}
-                        style={{ marginLeft: 'auto', marginRight: 'auto'}}></Image>
+                        style={{ height: '100%', width:'100%', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                     <div className='w-full h-full grid place-content-center'>
                         <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
                             Vivir nuevas experiencias
@@ -53,9 +47,7 @@ export default function Valores() {
                     <Image
                         src={logoupv}
                         alt="logoupv"
-                        width={110}
-                        height={110}
-                        style={{ marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        style={{ height: '100%', width:'100%', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
                     <div className='w-full h-full grid place-content-center'>
                         <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
                             Disfrutar de la Vida
