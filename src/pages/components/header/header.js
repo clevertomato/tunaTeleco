@@ -61,15 +61,15 @@ export default function Header({ showNav }) {
         </button>
 
       </div>
-      <div className="w-full  flex justify-end mt-2 pr-6">
+      <div className="md:hidden w-full  flex justify-end mt-2 pr-6">
         <ul className='w-1/2 h-full text-2xl'>
-          <li className={`${!openedMenu ? 'opacity-0' : 'opacity-100'} transition-all duration-200 pl-4 py-2 text-right grid place-content-end`}>
+          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all duration-200 pl-4 py-2 text-right grid place-content-end`}>
             <p className='border-b-2 border-white pb-1'>CONTACTO</p>
           </li>
-          <li className={`${!openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200 pl-4 py-2 text-right grid place-content-end`}>
+          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200 pl-4 py-2 text-right grid place-content-end`}>
             <p className='border-b-2 border-white pb-1'>CANCIONERO</p>
           </li>
-          <li className={`${!openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-400 duration-150 pl-4 py-2 text-right grid place-content-end`}>
+          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-400 duration-150 pl-4 py-2 text-right grid place-content-end`}>
             <p className='border-b-2 border-white pb-1'>HISTORIA</p>
           </li>
           
