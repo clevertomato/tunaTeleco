@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useRef} from 'react';
 import Image from 'next/image';
 import sheeran from '../../img/sheeran2.png'
 import barato from '../../img/barato2.png'
