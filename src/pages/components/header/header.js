@@ -4,8 +4,9 @@ import Image from 'next/image'
 import instagram from '../../../img/instagram.svg'
 import logoupv from '../../../img/UPV.gif';
 
-export default function Header({ showNav }) {
+export default function Header({ showNav, scrollToForm }) {
   const [openedMenu, setOpenedMenu] = useState(true);
+
 
   const openMenu = () => {
     setOpenedMenu(!openedMenu);
@@ -29,7 +30,7 @@ export default function Header({ showNav }) {
           <p className='my-auto pl-2'>TUNATELECO</p></div>
         </div>  
         <ul className='py-4 px-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm lg:text-xl text-black/70 font-normal '>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 hover:cursor-pointer'>CONTACTO</li>
+          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 hover:cursor-pointer' onClick={scrollToForm} >CONTACTO</li>
           <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 ease-in-out hover:cursor-pointer'>CANCIONERO</li>
           <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400  hover:cursor-pointer'>HISTORIA</li>
           <li><Image
@@ -57,23 +58,23 @@ export default function Header({ showNav }) {
           </div>
           </div>
           </div>  
-        <button onClick={openMenu} class="space-y-2 pr-6 hover:cursor-pointer">
-          <div class="w-8 h-0.5 bg-white"></div>
-          <div class="w-8 h-0.5 bg-white"></div>
-          <div class="w-8 h-0.5 bg-white rounded-xl"></div>
+        <button onClick={openMenu} class={`${openedMenu ? 'space-y-2 ' : ''} pr-6 hover:cursor-pointer transition-all duration-300`}>
+          <div class={`${openedMenu ? '' : 'origin-center rotate-45 absolute mt-05'} -ml-8 w-8 h-0.5 bg-white transition-all duration-300 `}></div>
+          <div class={`${openedMenu ? '' : 'opacity-0'}  -ml-8 w-8 h-0.5 bg-white diagonal-fractions transition-all duration-300 `}></div>
+          <div class={`${openedMenu ? '' : 'origin-center -rotate-45 absolute'} -ml-8 w-8 h-0.5 bg-white rounded-xl transition-all duration-300`}></div>
         </button>
 
       </div>
-      <div className="md:hidden w-full  flex flex-row mt-4 px-4 pr-6">
-        <ul className='w-full h-full text-lg flex flex-row justify-between'>
-          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200 grid place-content-end`} >
-            <p className='border-b-2 border-white  pb-1 text-center'>CONTACTO</p>
+      <div className={`${openedMenu ? '-mt-16' : 'mt-8'} md:hidden w-full  flex flex-row  px-4 pr-6 font-normal transition-all ease-in-out duration-300`}>
+        <ul className='w-full h-full text-xl flex flex-row justify-between'>
+        <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+            <p className='border-b-2 border-white text-center ' onClick={scrollToForm}>CONTACTO</p>
           </li>
-          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200  grid place-content-end`}>
-            <p className='border-b-2 border-white  pb-1 text-center'>CANCIONERO</p>
+          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+            <p className='border-b-2 border-white text-center  '>CANCIONERO</p>
           </li>
-          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all delay-200 duration-200 grid place-content-end`} >
-            <p className='border-b-2 border-white  pb-1 text-center px-auto'>HISTORIA</p>
+          <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+            <p className='border-b-2 border-white  text-center '>HISTORIA</p>
           </li>
           
         </ul>

@@ -77,7 +77,9 @@
   }
   .border-left-bottom-left2 {
     position: relative;
-    
+  }
+  .mt-05{
+margin-top: 0.12rem;
   }
   .border-left-bottom-left2::before {
     content: "";
