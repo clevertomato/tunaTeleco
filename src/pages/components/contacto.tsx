@@ -4,7 +4,7 @@ import sheeran from '../../img/sheeran2.png'
 import barato from '../../img/barato2.png'
 import hodor from '../../img/hodor2.png'
 
-const Contacto = forwardRef((props, ref) => {
+const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
 
   return (
   <div className="h-contacto w-auto contacto-bg flex items-center justify-center" ref={ref}>

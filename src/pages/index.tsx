@@ -9,7 +9,7 @@ import Contacto from './components/contacto';
 
 export default function Home() {
   const [show, setShow] = useState(true);
-  const formRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToForm = () => {
     if (formRef.current) {
