@@ -138,7 +138,7 @@ export default function Celebraciones() {
                       </div>
                     </div>
                   </div>
-                  <div className={`${active ? 'transition-display' : 'transition-display-out'}  ${active3 ? 'opacity-100 translate-item md:w-4/5 md:h-4/5 absolute md:z-10 md:top-0 md:-mt-3 h-full mb-0' : 'mb-2 md:mb-0 md:absolute md:z-0 md:top-1/2 md:mt-2 md:w-1/2 w-full md:h-1/2 h-1/4'} ${active1 || active2 || active4 ? 'md:block hidden ' : ' '} relative  md:p-2 md:-ml-2 flex flex-col transition-all ease-in-out delay-100 duration-400 hover:cursor-pointer`}  onClick={clickActive3}>
+                  <div className={`${active ? 'transition-display' : 'transition-display-out'}  ${active3 ? 'opacity-100 translate-item md:w-4/5 md:h-4/5 absolute md:z-10 md:top-0 md:-mt-3 h-full mb-0' : 'mb-2 md:mb-0 md:absolute md:z-0 md:top-1/2 md:mt-2 md:w-1/2 w-full md:h-1/2 h-1/4'} ${active1 || active2 || active4 ? 'md:block hidden ' : ' '} relative  md:p-2 md:-ml-2 flex flex-col transition-all ease-in-out delay-100 duration-400 hover:cursor-pointer  overflow-y-hidden`}  onClick={clickActive3}>
                     <div className={`${active3 ? '' : ''} background-item h-full w-full transition-all ease-in-out delay-300 duration-500 border-2 border-white `}>
                       <div className={`${active3 ? 'h-1/5 md:h-2/6 text-xl md:text-2xl 3xl:text-4xl 4xl:text-5xl ' : 'h-full '} w-full  grid place-content-center text-white transition-all ease-in-out delay-300 duration-500 md:text-2xl text-lg text-center`}>   
                         <p className={`${active3 ? 'hidden' : 'block '} md:border-y-2 md:py-1 border-white`}>BODAS<br className='md:hidden'/> & <br className='md:hidden'/>SERENETAS</p>
@@ -158,7 +158,7 @@ export default function Celebraciones() {
                       </div>
                     </div>
                   </div>
-                  <div className={` ${active ? 'transition-display' : 'transition-display-out'}  ${active4 ? 'opacity-100 translate-item md:w-4/5 md:h-4/5 absolute md:z-10 md:left-0 md:top-0 md:-mt-3 h-full' : 'md:absolute md:z-0 md:left-1/2 md:top-1/2 md:mt-2 md:w-1/2 w-full md:h-1/2 h-1/4'} ${active1 || active2 || active3 ? 'md:block hidden ' : ' '} relative md:ml-2  flex flex-col md:p-2  transition-all ease-in-out delay-100 duration-400 hover:cursor-pointer`}  onClick={clickActive4}>
+                  <div className={` ${active ? 'transition-display' : 'transition-display-out'}  ${active4 ? 'opacity-100 translate-item md:w-4/5 md:h-4/5 absolute md:z-10 md:left-0 md:top-0 md:-mt-3 h-full' : 'md:absolute md:z-0 md:left-1/2 md:top-1/2 md:mt-2 md:w-1/2 w-full md:h-1/2 h-1/4'} ${active1 || active2 || active3 ? 'md:block hidden ' : ' '} relative md:ml-2  flex flex-col md:p-2  transition-all ease-in-out delay-100 duration-400 hover:cursor-pointer  overflow-y-hidden`}  onClick={clickActive4}>
                     <div className={`${active4 ? '' : ''} background-item h-full w-full transition-all ease-in-out delay-300 duration-500 border-2 border-white`}>
                     <div className={`${active4 ? 'h-1/5 md:h-2/6 text-xl md:text-2xl 3xl:text-4xl 4xl:text-5xl' : 'h-full  '} w-full  grid place-content-center text-white transition-all ease-in-out delay-300 duration-500 md:text-2xl text-center`}>   
                         <p className={`${active4 ? 'hidden' : 'block'} md:border-y-2 md:py-1 border-white px-4 `}>INICIATIVAS SOLIDARIAS</p>
