@@ -94,7 +94,7 @@ export default function Celebraciones() {
         </div>
         </div>
         <div ref={boxServicios} className='h-full py-8 px-8 md:pl-16 md3:pr-28 md w-full md:w-1/2 relative overflow-y-hidden overflow-x-hidden'>
-        <div className={`${active ? 'animate-changeBackground-resize transition-display-out' : ' transition-display animate-changeBackground-not-active-resize animated-background-notActive border-2 border-white'} animated-background rounded-sm h-70-screen relative`}>
+        <div className={`${active ? 'animate-changeBackground-resize transition-display-out animated-background-notActive ' : ' transition-display animate-changeBackground-not-active-resize border-2 border-white'} animated-background rounded-sm h-70-screen relative`}>
                 <div className={`${active ? 'opacity-100' : 'opacity-0 absolute z-10'} text-white flex md:flex-row flex-col align-bottom w-full h-full absolute z-10 transition-all ease-in-out delay-300 duration-500`}>
                 <div className='w-full h-full'>
                 <div className="flex w-full h-full relative flex-col md:gap-0">

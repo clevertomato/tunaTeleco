@@ -53,7 +53,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between '>
-          <div className='h-full form-bg  md:h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
+          <div className='h-full form-bg  h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={sheeran}
@@ -61,7 +61,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 p-8 '>
+                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8 '>
                   <li className='text-left text-xl'>
                       Sheeran (Pablo)
                   </li>
@@ -78,7 +78,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 p-8'>
+                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8'>
                   <li className='text-left text-xl'>
                       Barato (Pedro)
                   </li>
@@ -95,7 +95,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 p-8'>
+                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8'>
                   <li className='text-left text-xl'>
                       Hodor (Santi)
                   </li>

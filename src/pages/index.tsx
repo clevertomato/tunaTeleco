@@ -6,6 +6,8 @@ import Quesomos from './components/quesomos';
 import Valores from './components/valores';
 import Celebraciones from './components/celebraciones';
 import Contacto from './components/contacto';
+import Apuntate from './components/apuntate';
+import Footer from './components/footer/footer';
 
 export default function Home() {
   const [show, setShow] = useState(true);
