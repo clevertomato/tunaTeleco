@@ -279,6 +279,14 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+.animated-background-notActive {
+  background-image: none;
+  border-width: 0px;
+  background: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .translate-item{
   transform: translateX(12.5%) translateY(15%);
@@ -296,6 +304,24 @@ textarea {
 }
 .background-item {
   background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/telecoactos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-item2 {
+  background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/conatos2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-item3 {
+  background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/conatos3.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-item4 {
+  background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/conatos4.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -500,11 +526,10 @@ height: 10%;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
     border-width: 2px;
     border-color:white;
-  }
-  to {
+} to {
     background-image: none;
     border-width: 0px;
-    
+    background: transparent;
   }
 }
 
@@ -512,12 +537,12 @@ height: 10%;
   from {
     background-image: none;
     border-width: 0px;
+    background: transparent; 
   }
   to {
     background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
     border-width: 2px;
     border-color:white;
-    
   }
 }
 

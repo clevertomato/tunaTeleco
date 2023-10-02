@@ -25,14 +25,15 @@ export default function Header({ showNav, scrollToForm }) {
                 width={35}
                 height={35}
                 alt="logoupv"
+                className="image-with-shadow"
                 style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem'}}
           />
-          <p className='my-auto pl-2'>TUNATELECO</p></div>
+          <p className='my-auto pl-2 font-light'>TUNATELECO</p></div>
         </div>  
         <ul className='py-4 px-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm lg:text-xl text-black/70 font-normal '>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 hover:cursor-pointer' onClick={scrollToForm} >CONTACTO</li>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 ease-in-out hover:cursor-pointer'>CANCIONERO</li>
-          <li className='py-1 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400  hover:cursor-pointer'>HISTORIA</li>
+          <li className='mt-4 text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 hover:cursor-pointer' onClick={scrollToForm} >CONTACTO</li>
+          <li className='mt-4 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 ease-in-out hover:cursor-pointer'>CANCIONERO</li>
+          <li className='mt-4 text-md md:text-xl lg:text-2xl 3xl:text-4xl overflow-hidden border-b-3 rounded-sm border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400  hover:cursor-pointer'>HISTORIA</li>
           <li><Image
               src={logoupv}
               width={80}

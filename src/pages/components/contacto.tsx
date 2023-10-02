@@ -20,20 +20,20 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                 <div className='w-full md:h-full gap-2 flex flex-col justify-between'>
                   <div className="w-full">
                     <label className='text-white text-lg'>Nombre:</label>
-                    <input type="text" name="full_name" id="full_name" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full " required />
+                    <input type="text" name="full_name" id="full_name" className="text-lg text-gray-100 bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Correo:</label>
-                    <input type="email" name="email" id="email" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full " required />
+                    <input type="email" name="email" id="email" className="text-lg text-gray-100 bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Teléfono:</label>
-                    <input type="tel" name="tel" id="tel" className="text-lg text-white bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full " placeholder="*Opcional*" />
+                    <input type="tel" name="tel" id="tel" className="text-lg text-gray-100 bg-black/20 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white" placeholder="*Opcional*" />
                   </div>
                   <div className='flex align-middle w-full h-full'>
                     <div className="w-full h-auto">
                       <label className='text-white text-lg'>Mensaje:</label>
-                      <textarea name="text" rows={7} className="pt-1 text-lg text-white bg-black/20 border-2 mt-1 mb-1 rounded-sm px-4 w-full " required/>
+                      <textarea name="text" rows={7} className="pt-1 text-lg text-gray-100 bg-black/20 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white" required/>
                     </div>
                   </div>
                   <div className="text-right grid place-content-end">
@@ -52,8 +52,8 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
               <h2 className='text-center p-2 border-y-2'>¡Llámanos!</h2>
             </div>
           </div>
-          <div className='w-full h-full flex flex-col justify-between text-white'>
-          <div className='h-full form-bg  md:h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0'>
+          <div className='w-full h-full flex flex-col justify-between '>
+          <div className='h-full form-bg  md:h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={sheeran}
