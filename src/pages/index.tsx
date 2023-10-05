@@ -29,6 +29,7 @@ export default function Home() {
       <Valores/>
       <Celebraciones/>
       <Contacto ref={formRef} />
+      <Apuntate/>
     </div>
   )
 }

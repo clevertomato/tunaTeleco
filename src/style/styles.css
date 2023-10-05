@@ -157,6 +157,20 @@ margin-top: 0.12rem;
     background-repeat: no-repeat;
     background-position: center; 
   }
+  .form-bg-20{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../img/peaks-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    opacity: 50;
+  }
+  .apuntate-bg{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/publico.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    
+  }
   .h-30{
     height: 30%;
   }
@@ -414,6 +428,11 @@ height: 10%;
 }
 .h-quienes-text{
   height: 90vh;
+}
+.h-apuntate{
+  height: 50vh;
+  min-height: 450px;
+  max-height: 2000px;
 }
 
 .guitarNoteClr{fill:black;}

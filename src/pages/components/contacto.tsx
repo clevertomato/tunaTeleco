@@ -14,7 +14,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
           <div className="text-2xl md:text-3xl text-white grid place-content-center w-full mt-4 md:m-0">
             <h2 className='text-center p-2 border-y-2'>¡Contacta con nosotros!</h2>
           </div>
-          <div className="h-contacto-form  w-full form-bg border-2 border-white shadow-lg p-4 grid gap-4 text-sm" >
+          <div className="h-contacto-form form-bg w-full border-2 border-white shadow-lg p-4 grid gap-4 text-sm" >
             <div className="w-full h-full">
               <div className="md:h-full flex flex-col justify-between w-full text-sm ">
                 <div className='w-full md:h-full gap-2 flex flex-col justify-between'>
@@ -53,7 +53,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between '>
-          <div className='h-full form-bg  h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
+          <div className='h-full bg-white/30 text-white  h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={sheeran}
@@ -70,7 +70,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className=' form-bg h-contacto-foto 2xl:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0'>
+            <div className=' bg-white/30 text-white h-contacto-foto 2xl:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={barato}
@@ -87,7 +87,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className='form-bg h-contacto-foto 2xl:h-contacto-foto2 w-full border-2 flex flex-row'>
+            <div className='bg-white/30 text-white h-contacto-foto 2xl:h-contacto-foto2 w-full border-2 flex flex-row'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={hodor}
