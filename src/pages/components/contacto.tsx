@@ -37,7 +37,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                     </div>
                   </div>
                   <div className="text-right grid place-content-end">
-                    <button className="border-2 border-white text-white font-bold py-2 px-4  rounded-sm text-xl hover:shadow-sm  hover:border-my-3purple transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
+                    <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl hover:shadow-sm  hover:border-my-3purple transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between '>
-          <div className='h-full bg-white/30 text-white  h-contacto-foto 2xl:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
+          <div className='h-full bg-black/30 text-white  h-contacto-foto lg:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={sheeran}
@@ -70,7 +70,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className=' bg-white/30 text-white h-contacto-foto 2xl:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0'>
+            <div className=' bg-black/30 text-white h-contacto-foto lg:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={barato}
@@ -87,7 +87,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className='bg-white/30 text-white h-contacto-foto 2xl:h-contacto-foto2 w-full border-2 flex flex-row'>
+            <div className='bg-black/30 text-white h-contacto-foto lg:h-contacto-foto2 w-full border-2 flex flex-row'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={hodor}
@@ -113,3 +113,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
 });
 
 export default Contacto
+
+
+
+

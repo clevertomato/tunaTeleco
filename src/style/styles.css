@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat+Alternates&display=swap');
 
 
 @layer utilities {
@@ -15,6 +16,7 @@
   .border-right-top-right {
     position: relative;
   }
+
   .border-right-top-right::before {
     content: "";
     position: absolute;
@@ -122,6 +124,10 @@ margin-top: 0.12rem;
   .noteanimation_note {
     animation: bounce 1.6s linear infinite;
   }
+  .shakeanimation{
+    animation: shake 3.75s linear infinite;
+
+  }
   .duration-400 {
     transition-duration: 400ms;
   }
@@ -157,6 +163,12 @@ margin-top: 0.12rem;
     background-repeat: no-repeat;
     background-position: center; 
   }
+  .apuntate-bg{
+    background-image: url('../img/peaks-black.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
   .form-bg-20{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../img/peaks-bg2.png');
     background-size: cover;
@@ -164,7 +176,7 @@ margin-top: 0.12rem;
     background-position: center; 
     opacity: 50;
   }
-  .apuntate-bg{
+  .apuntate-bg-back{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/publico.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -264,7 +276,7 @@ textarea {
 }
 
 .celebraciones-bg{
-  background-image: url('../img/bg-purple2.png');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../img/bg-purple2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
@@ -587,4 +599,18 @@ from{
 to{
   opacity: 0%;
 }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  2% { transform: translate(-1px, -2px) rotate(-1deg); }
+  4% { transform: translate(-3px, 0px) rotate(1deg); }
+  6% { transform: translate(3px, 2px) rotate(0deg); }
+  8% { transform: translate(1px, -1px) rotate(1deg); }
+  10% { transform: translate(-1px, 2px) rotate(-1deg); }
+  12% { transform: translate(-3px, 1px) rotate(0deg); }
+  14% { transform: translate(3px, 1px) rotate(-1deg); }
+  16% { transform: translate(-1px, -1px) rotate(1deg); }
+  18% { transform: translate(1px, 2px) rotate(0deg); }
+  20% { transform: translate(1px, -2px) rotate(-1deg); }
 }

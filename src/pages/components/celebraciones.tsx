@@ -66,19 +66,19 @@ export default function Celebraciones() {
                 </div>
               </Slide>
               <Slide left duration={1000}>
-                <p className='text-center px-8 hidden md2:grid place-content-center letter-spacing-011'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo. </p>
+                <p className=' text-center px-8 hidden md2:grid place-content-center letter-spacing-011'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo. </p>
               </Slide>
               <Slide left duration={1000}>
-                <p className='md2:hidden pb-4 grid place-content-center letter-spacing-011 text-center pt-4'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo.</p>
+                <p className=' md2:hidden pb-4 grid place-content-center letter-spacing-011 text-center pt-4'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo.</p>
               </Slide>
               <Slide left duration={1000}>
-                <p className='text-center px-8 hidden md2:grid place-content-center letter-spacing-011 mb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
+                <p className=' text-center px-8 hidden md2:grid place-content-center letter-spacing-011 mb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
               </Slide>
               <Slide left duration={1000}>
-                <p className='md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
+                <p className=' md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
               </Slide>
               <div className='flex items-center justify-between w-full pb-4'>
-                <button className='text-center py-2 px-6 border-2 border-white hover:border-my-orange hover:shadow-md transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
+                <button className='text-center py-2 px-6 border-2 border-white md:hover:border-my-orange hover:shadow-md transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
                       Información sobre Eventos
                 </button>
               </div>
