@@ -3,7 +3,10 @@ module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {  
+    extend: { 
+       dropShadow: {
+         'md': ' 15px 15px 10px 0px rgba(0,0,0,0.75);',
+       },
       screens: {
         'md2': '858px',
         'md3': '900px',
