@@ -78,7 +78,7 @@ export default function Celebraciones() {
                 <p className=' md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
               </Slide>
               <div className='flex items-center justify-between w-full pb-4'>
-                <button className='text-center py-2 px-6 border-2 border-white md:hover:border-my-orange hover:shadow-md transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
+                <button className='text-center py-2 px-6 border-2 border-white shadow-sm shadow-black/60 hover:bg-black/10 bg-white/5  hover:shadow-none transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
                       Información sobre Eventos
                 </button>
               </div>

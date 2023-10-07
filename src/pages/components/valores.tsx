@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import logoupv from '../../img/UPV.gif'
+import guitarra from '../../img/guitarra.png'
+import charla from '../../img/charla.png'
+import playa from '../../img/playa.png'
+import retos from '../../img/retos.png'
 
 export default function Valores() {
   return (
@@ -13,48 +17,48 @@ export default function Valores() {
         <div className='flex flex-wrap text-white h-3/5 relative'>
             <div className='w-1/2 md:w-1/4 h-auto flex flex-col p-8 gap-4'>
                 <Image
-                        src={logoupv}
+                        src={charla}
                         alt="logoupv"
-                        height={70}
-                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        height={90}
+                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
                         Mantener la Tradición
                     </p>
                 </div>
             </div>
             <div className='w-1/2 md:w-1/4 h-auto flex flex-col p-8 gap-4'>
                 <Image
-                        src={logoupv}
+                        src={guitarra}
                         alt="logoupv"
-                        height={70}
-                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        height={90}
+                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
                         Fomentar el Folclore
                     </p>
                 </div>
             </div>
             <div className='w-1/2 md:w-1/4 h-auto flex flex-col p-8 gap-4'>
                 <Image
-                        src={logoupv}
+                        src={retos}
                         alt="logoupv"
-                        height={70}
-                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        height={90}
+                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
                     Vivir nuevas experiencias
                     </p>
                 </div>
             </div>
             <div className='w-1/2 md:w-1/4 h-auto flex flex-col p-8 gap-4'>
                 <Image
-                        src={logoupv}
+                        src={playa}
                         alt="logoupv"
-                        height={70}
-                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto',  padding: '0.2rem'}}></Image>
+                        height={90}
+                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
                     Disfrutar de la Vida
                     </p>
                 </div>

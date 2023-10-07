@@ -145,6 +145,11 @@ margin-top: 0.12rem;
     max-width: 50%;
     width: auto;
   }
+  .shadow-inset{
+    -webkit-box-shadow: inset 2px 2px 13px 0px rgba(66, 68, 90, 0.4);
+    -moz-box-shadow: inset 2px 2px 13px 0px rgba(66, 68, 90, 0.4);
+    box-shadow: inset 2px 2px 13px 0px rgba(66, 68, 90, 0.4);
+  }
   .ml--100{
     margin-left: -100%;
   }
