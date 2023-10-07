@@ -24,14 +24,14 @@ function Apuntate() {
               </div>
               
               <div className='md:h-1/6 h-min w-full grid place-content-center md:pb-8'>
-                  <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-black/60 hover:bg-black/10 bg-white/10  hover:shadow-none transition-all duration-300 hover:cursor-pointer"> Apúntate  </button>
+                  <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-black/80 hover:bg-black/10 bg-white/10  hover:shadow-none transition-all duration-300 hover:cursor-pointer"> Apúntate  </button>
               </div>
               <div className='md:hidden md:h-full w-full  md:w-1/2 h-apuntate pt-0 p-8 md:pt-8 pb-4 mb-8'>
                 <Carousel/>
               </div>
             </div>
         </div>
-       <div className='apuntate-bg-back w-auto h-full flex md:flex-row flex-col justify-between text-white border-t-2 px-8 text-base md:text-xl'>
+       <div className='apuntate-bg-back w-auto h-full flex md:flex-row flex-col justify-between text-white border-t-2 px-8 text-base md:text-xl py-4'>
           <div className='md:hidden h-12 md:h-32 px-auto flex flex-row items-center gap-1 justify-center'>
           <p className='md:mr-8'>TunaTeleco Copyright 2023 </p>
             </div>
@@ -46,11 +46,17 @@ function Apuntate() {
           </div>
           <div className='h-24 md:h-28 md:px-8 flex flex-row items-center justify-center gap-1 md:p-2 mt-2'>
           <p className='mr-8 text-center '>Universidad Politécnica de Valencia </p>
-          <button onClick={goUpv}>          <Image
+          <button onClick={goUpv} className='hidden md:block'>          <Image
               src={logoupv}
               alt="logoupv"
               onClick={goUpv}
               style={{ height:'5rem',width:'5rem'}} // optional
+        /></button>
+        <button onClick={goUpv} className='flex md:hidden justify-end'>          <Image
+              src={logoupv}
+              alt="logoupv"
+              onClick={goUpv}
+              style={{ height:'50%',width:'50%'}} // optional
         /></button>
 
   </div>

@@ -22,7 +22,7 @@ export default function Valores() {
                         height={100}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit '>
                         Mantener la Tradición
                     </p>
                 </div>
@@ -34,7 +34,7 @@ export default function Valores() {
                         height={104}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit '>
                         Fomentar el Folclore
                     </p>
                 </div>
@@ -46,7 +46,7 @@ export default function Valores() {
                         height={100}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit '>
                     Vivir nuevas experiencias
                     </p>
                 </div>
@@ -58,7 +58,7 @@ export default function Valores() {
                         height={97}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto', paddingTop: '2px'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit  '>
                     Disfrutar de la Vida
                     </p>
                 </div>

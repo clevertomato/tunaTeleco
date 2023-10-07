@@ -38,7 +38,7 @@ export default function Header({ showNav, scrollToForm }) {
             <p className='my-auto pl-2 font-light'>TUNATELECO</p>
           </div>
         <ul className='py-4 pl-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm lg:text-xl text-black/70 font-normal '>
-        <li className='filter hover:drop-shadow-lg shadow-white hover:cursor-pointer hover:scale-105 transition-all duration-300'><Image
+        <li className='filter hover:drop-shadow-lg shadow-white hover:cursor-pointer hover:scale-105 transition-all duration-200'><Image
               src={spotify}
               width={80}
               height={80}
