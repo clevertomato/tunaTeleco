@@ -5,7 +5,7 @@ import email from '../../img/email.svg'
 import Carousel from './carousel/carousel';
 function Apuntate() {
   const goUpv = () => {
-    window.location.replace('https://www.upv.es/es');
+    window.open('https://www.upv.es/es', "_blank", "noreferrer");
   };
 
   return (
@@ -32,10 +32,10 @@ function Apuntate() {
             </div>
         </div>
        <div className='apuntate-bg-back w-auto h-full flex md:flex-row flex-col justify-between text-white border-t-2 px-8 text-base md:text-xl'>
-          <div className='md:hidden h-12 md:h-28 px-auto flex flex-row items-center gap-1 justify-center'>
+          <div className='md:hidden h-12 md:h-32 px-auto flex flex-row items-center gap-1 justify-center'>
           <p className='md:mr-8'>TunaTeleco Copyright 2023 </p>
             </div>
-          <div className='h-12 md:h-24 px-auto flex flex-row items-center gap-1 justify-center'>
+          <div className='h-12 md:h-28 px-auto flex flex-row items-center gap-1 justify-center mt-2'>
             <p className='md:block hidden md:mr-8 text-center'>TunaTeleco Copyright 2023 </p>
             <Image
                 src={email}
@@ -44,14 +44,15 @@ function Apuntate() {
             />    
             <p>tunateleco@gmail.com </p>
           </div>
-          <div className='h-24 md:px-8 flex flex-row items-center justify-center gap-1 md:p-2'>
+          <div className='h-24 md:h-28 md:px-8 flex flex-row items-center justify-center gap-1 md:p-2 mt-2'>
           <p className='mr-8 text-center '>Universidad Politécnica de Valencia </p>
-          <Image
+          <button onClick={goUpv}>          <Image
               src={logoupv}
               alt="logoupv"
               onClick={goUpv}
               style={{ height:'5rem',width:'5rem'}} // optional
-        />
+        /></button>
+
   </div>
           
         </div>

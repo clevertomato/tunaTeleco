@@ -13,13 +13,13 @@ export default function Header({ showNav, scrollToForm }) {
     setOpenedMenu(!openedMenu);
   };
   const goInstagram = () => {
-    window.location.replace('https://www.instagram.com/tunateleco/');
+    window.open('https://www.instagram.com/tunateleco/', "_blank", "noreferrer");
   };
   const goSpotify = () => {
-    window.location.replace('https://open.spotify.com/intl-es/artist/00ZgjNqUvATaSpK6o1BxtR?si=OvBfc_j_QUqGk14TEVwgfg');
+    window.open('https://open.spotify.com/intl-es/artist/00ZgjNqUvATaSpK6o1BxtR?si=OvBfc_j_QUqGk14TEVwgfg', "_blank", "noreferrer");
   };
   const goUpv = () => {
-    window.location.replace('https://www.upv.es/es');
+    window.open('https://www.upv.es/es', "_blank", "noreferrer");
   };
 
   return (

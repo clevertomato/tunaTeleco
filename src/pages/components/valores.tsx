@@ -14,15 +14,15 @@ export default function Valores() {
                 Nuestros valores
             </p>
         </div>
-        <div className='flex flex-wrap text-white h-3/5 relative'>
+        <div className='flex flex-wrap text-white h-3/5 relative justify-between'>
             <div className='w-1/2 md:w-1/4 h-auto flex flex-col p-8 gap-4'>
                 <Image
                         src={charla}
                         alt="logoupv"
-                        height={90}
+                        height={100}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
                         Mantener la Tradición
                     </p>
                 </div>
@@ -31,10 +31,10 @@ export default function Valores() {
                 <Image
                         src={guitarra}
                         alt="logoupv"
-                        height={90}
+                        height={104}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
                         Fomentar el Folclore
                     </p>
                 </div>
@@ -43,10 +43,10 @@ export default function Valores() {
                 <Image
                         src={retos}
                         alt="logoupv"
-                        height={90}
+                        height={100}
                         style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
                     Vivir nuevas experiencias
                     </p>
                 </div>
@@ -55,10 +55,10 @@ export default function Valores() {
                 <Image
                         src={playa}
                         alt="logoupv"
-                        height={90}
-                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto'}}></Image>
+                        height={97}
+                        style={{ width:'auto', marginLeft: 'auto', marginRight: 'auto', paddingTop: '2px'}}></Image>
                 <div className='w-full h-full grid place-content-center'>
-                    <p className='text-center text-xl lg:text-2xl 3xl:text-3xl  w-fit'>
+                    <p className='text-center text-xl lg:text-xl 3xl:text-3xl  w-fit px-2 py-1 bg-black/30 border-2 '>
                     Disfrutar de la Vida
                     </p>
                 </div>
