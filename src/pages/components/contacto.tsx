@@ -14,30 +14,30 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
           <div className="text-2xl md:text-3xl text-white grid place-content-center w-full mt-4 md:m-0">
             <h2 className='text-center p-2 border-y-2'>¡Contacta con nosotros!</h2>
           </div>
-          <div className="h-contacto-form capa-bg w-full border-2 border-white shadow-lg p-4 grid gap-4 text-sm" >
+          <div className="h-contacto-form form-bg w-full border-2 border-white shadow-lg p-4 grid gap-4 text-sm rounded-sm" >
             <div className="w-full h-full">
               <div className="md:h-full flex flex-col justify-between w-full text-sm ">
                 <div className='w-full md:h-full gap-2 flex flex-col justify-between'>
                   <div className="w-full">
                     <label className='text-white text-lg'>Nombre:</label>
-                    <input type="text" name="full_name" id="full_name" className="text-lg text-gray-100 bg-white h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required />
+                    <input type="text" name="full_name" id="full_name" className="text-lg text-gray-100 bg-black/50 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Correo:</label>
-                    <input type="email" name="email" id="email" className="text-lg text-gray-100 bg-white h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required />
+                    <input type="email" name="email" id="email" className="text-lg text-gray-100 bg-black/50 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required />
                   </div>
                   <div className="">
                     <label className='text-white text-lg'>Teléfono:</label>
-                    <input type="tel" name="tel" id="tel" className="text-lg text-gray-100 bg-white h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" placeholder="*Opcional*" />
+                    <input type="tel" name="tel" id="tel" className="text-lg text-gray-100 bg-black/50 h-10 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" placeholder="*Opcional*" />
                   </div>
                   <div className='flex align-middle w-full h-full'>
                     <div className="w-full h-auto">
                       <label className='text-white text-lg'>Mensaje:</label>
-                      <textarea name="text" rows={6} className="pt-1 text-lg text-gray-100 bg-white border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required/>
+                      <textarea name="text" rows={6} className="pt-1 text-lg text-gray-100 bg-black/50 border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset" required/>
                     </div>
                   </div>
                   <div className="text-right grid place-content-end">
-                    <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-white/60 hover:bg-black/10 bg-white/10  hover:shadow-none  transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
+                    <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-black/60 hover:bg-black/10 bg-white/10  hover:shadow-none  transition-all duration-300 hover:cursor-pointer"> Enviar  </button>
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between '>
-          <div className='h-full capa-bg text-white  h-contacto-foto lg:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 '>
+          <div className='h-full capa-bg text-white  h-contacto-foto lg:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 rounded-sm'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={sheeran}
@@ -70,7 +70,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className=' capa-bg text-white h-contacto-foto lg:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0'>
+            <div className=' capa-bg text-white h-contacto-foto lg:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0 rounded-sm'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={barato}
@@ -87,7 +87,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
                   </li>
                 </ul>
             </div>
-            <div className='capa-bg text-white h-contacto-foto lg:h-contacto-foto2 w-full border-2 flex flex-row'>
+            <div className='capa-bg text-white h-contacto-foto lg:h-contacto-foto2 w-full border-2 flex flex-row rounded-sm'>
                 <div className='h-full w-1/2 border-r-2'>
                       <Image
                       src={hodor}
