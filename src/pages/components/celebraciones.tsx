@@ -10,6 +10,7 @@ export default function Celebraciones() {
     const [active2, setActive2] = useState(false);
     const [active3, setActive3] = useState(false);
     const [active4, setActive4] = useState(false);
+    const [activeScale, setActiveScale] = useState(false);
     const boxServicios = useRef(null)
 
 
@@ -20,6 +21,22 @@ export default function Celebraciones() {
         setActive3(false);
         setActive4(false);
       };
+    const clickActiveOneTime = () => {
+      console.log(!activeScale);
+      if(!active){
+        setActive(!active);
+        setActiveScale(false);
+          setTimeout(() => {
+          setActiveScale(true);
+        }, 700);
+      }else{
+
+        setActiveScale(true);
+          setTimeout(() => {
+          setActiveScale(false);
+        }, 700);
+      }
+    };
     const clickActive1 = () => {
       setActive1(!active1);
       setActive2(false);
@@ -56,29 +73,31 @@ export default function Celebraciones() {
       };
 
   return (
-    <div className={`${active ? 'md:ml--100 md:ml-0' : ''} text-black  h-quienes w-auto celebraciones-bg flex flex-col md:flex-row overflow-hidden transition-all ease-in-out delay-300 duration-500 border-b-2 border-white `}>
+    <div className={`${active ? 'md:ml--100 md:ml-0' : ''}  text-black  h-quienes w-auto celebraciones-bg flex flex-col md:flex-row overflow-hidden transition-all ease-in-out delay-300 duration-500 border-b-2 border-white `}>
       <div className='h-full w-full md:w-4/6 px-8 md3:pl-28 md:pr-0 md:py-8'>
         <div className='h-full w-full  sm:text-sm md:text-sm md3:text-base xl:text-xl 3xl:text-3xl flex flex-col relative md:border-left-bottom-left2 3xl:border-left-bottom-left'>
             <div className={`${active ? 'md:ml--100 md:m-0' : ''} h-full w-full pb-0 md:pb-4  lg:absolute z-10 flex flex-col justify-between transition-all ease-in-out delay-300 duration-500 `}>
-              <Slide left duration={1500}>
                 <div className='grid place-content-center py-8 md:py-0 pb-4'>
                     <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>¿Quieres hacer que tu evento o celebración sea inolvidable?</p>
                 </div>
-              </Slide>
-              <Slide left duration={1000}>
+
+
                 <p className=' text-center px-8 hidden md2:grid place-content-center letter-spacing-011'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo. </p>
-              </Slide>
-              <Slide left duration={1000}>
+
+
                 <p className=' md2:hidden pb-4 grid place-content-center letter-spacing-011 text-center pt-4'>Ofrecemos nuestros servicios para bodas, comuniones, cumpleaños, jubilaciones y cualquier ocasión especial que desees destacar. Nuestro objetivo es hacer de cada momento una auténtica fiesta para que todos disfruten al máximo.</p>
-              </Slide>
-              <Slide left duration={1000}>
+
+
                 <p className=' text-center px-8 hidden md2:grid place-content-center letter-spacing-011 mb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
-              </Slide>
-              <Slide left duration={1000}>
+
+
                 <p className=' md2:hidden grid place-content-center letter-spacing-011 text-center pb-8'>Con un repertorio amplio y variado, llevamos la alegría y el buen humor a cada lugar que visitamos. Nos esforzamos al máximo para asegurar que tu evento sea un éxito y, lo más importante, lo disfrutamos enormemente en el proceso.</p>
-              </Slide>
+
               <div className='flex items-center justify-between w-full pb-4'>
-                <button className='text-center py-2 px-6 border-2 border-white shadow-sm shadow-black/80 hover:bg-black/10 bg-white/5  hover:shadow-none transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
+                <button className=' hidden md:block text-center py-2 px-6 border-2 border-white shadow-sm shadow-black/80 hover:bg-black/10 bg-white/5  hover:shadow-none transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActive}>
+                      Información sobre Eventos
+                </button>
+                <button className='md:hidden block text-center py-2 px-6 border-2 border-white shadow-sm shadow-black/80 hover:bg-black/10 bg-white/5  hover:shadow-none transition-all duration-300 hover:cursor-pointer text-white rounded-sm mx-auto' onClick={clickActiveOneTime}>
                       Información sobre Eventos
                 </button>
               </div>
@@ -94,14 +113,14 @@ export default function Celebraciones() {
         </div>
         </div>
         <div ref={boxServicios} className='h-full py-8 px-8 md:pl-16 md3:pr-28 md w-full md:w-1/2 relative overflow-y-hidden overflow-x-hidden'>
-        <div className={`${active ? 'animate-changeBackground-resize transition-display-out animated-background-notActive ' : ' transition-display animate-changeBackground-not-active-resize border-2 border-white'} animated-background rounded-sm h-70-screen relative`}>
-                <div className={`${active ? 'opacity-100' : 'opacity-0 absolute z-10'} text-white flex md:flex-row flex-col align-bottom w-full h-full absolute z-10 transition-all ease-in-out delay-300 duration-500`}>
+        <div className={`${active ? 'animate-changeBackground-resize transition-display-out animated-background-notActive ' : ' transition-display animate-changeBackground-not-active-resize border-2 border-white'}  animated-background rounded-sm h-70-screen relative`}>
+                <div className={`${active ? 'opacity-100' : 'opacity-0 absolute z-10'} ${activeScale ? 'scaleout' : ''} text-white flex md:flex-row flex-col align-bottom w-full h-full absolute z-10 transition-all ease-in-out delay-300 duration-500`}>
                 <div className='w-full h-full'>
                 <div className="flex w-full h-full relative flex-col md:gap-0">
                   <div className={` ${active ? 'transition-display' : 'transition-display-out'}  ${active1 ? 'opacity-100 translate-item md:w-4/5 md:h-4/5 absolute md:z-10 h-full mb-0' : 'mb-2 md:mb-0 md:absolute md:z-0 md:w-1/2 w-full h-1/4 md:h-1/2'} ${active2 || active3 || active4 ? 'md:block hidden ' : ' '} relative md:mb-0  md:p-2 md:-m-2  flex flex-col   transition-all ease-in-out delay-100 duration-400 hover:cursor-pointer overflow-y-hidden`}  onClick={clickActive1}>
                     <div className={`${active1 ? '' : ''} background-item   h-full w-full transition-all ease-in-out delay-300 duration-500 border-2 border-white`}>                  
                       <div className={`${active1 ? 'h-1/5 md:h-2/6 text-xl md:text-2xl 3xl:text-4xl 4xl:text-5xl' : 'h-full '} w-full  grid place-content-center text-white transition-all ease-in-out delay-300 duration-500 md:text-2xl text-lg text-center`}>
-                        <p className={`${active1 ? 'hidden' : 'block '} md:border-y-2 md:py-1 border-white`}>ACTUACIONES <br className='md:hidden'/> & <br className='md:hidden'/> EVENTOS</p>
+                        <p className={`${active1 ? 'hidden' : 'block '} md:border-y-2 md:py-1 border-white `}>ACTUACIONES <br className='md:hidden'/> & <br className='md:hidden'/> EVENTOS</p>
                         <p className={`${active1 ? 'block' : 'hidden'} md:border-y-2 md:py-1 border-white px-4 md:mt-16`}>ACTUACIONES & EVENTOS</p>                      
                       </div>
                       <div className={`${active1 ? 'h-3/5 animate-opacityText' : 'h-px  animate-opacityText-not-active'} w-full h-1/2 grid place-content-center text-white text-center text-base md:text-2xl 3xl:text-3xl 4xl:text-4xl  p-4 md:p-8 3xl:p-16`}>

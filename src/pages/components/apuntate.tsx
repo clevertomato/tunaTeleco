@@ -24,7 +24,7 @@ function Apuntate() {
               </div>
               
               <div className='md:h-1/6 h-min w-full grid place-content-center md:pb-8'>
-                  <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-black/80 hover:bg-black/10 bg-white/10  hover:shadow-none transition-all duration-300 hover:cursor-pointer"> Apúntate  </button>
+                  <button className="border-2 border-white text-white font-medium py-2 px-4  rounded-sm text-xl shadow-sm shadow-black/60 hover:bg-black/10 bg-white/10  hover:shadow-none transition-all duration-300 hover:cursor-pointer"> Apúntate  </button>
               </div>
               <div className='md:hidden md:h-full w-full  md:w-1/2 h-apuntate pt-0 p-8 md:pt-8 pb-4 mb-8'>
                 <Carousel/>

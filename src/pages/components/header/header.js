@@ -87,17 +87,17 @@ export default function Header({ showNav, scrollToForm }) {
       <div className={`${openedMenu ? '-mt-16' : 'mt-8'} md:hidden w-full  flex flex-col  px-4 pr-6 font-normal transition-all ease-in-out duration-300`}>
         <ul className='w-full h-full text-xl flex flex-row justify-between'>
         <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
-            <p className='border-b-2 border-white text-center ' onClick={scrollToForm}>CONTACTO</p>
+            <p className='border-b-3 border-white text-center pb-1' onClick={scrollToForm}>CONTACTO</p>
           </li>
           <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
-            <p className='border-b-2 border-white text-center  '>CANCIONERO</p>
+            <p className='border-b-3 border-white text-center pb-1'>CANCIONERO</p>
           </li>
           <li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
-            <p className='border-b-2 border-white  text-center '>HISTORIA</p>
+            <p className='border-b-3 border-white  text-center pb-1'>HISTORIA</p>
           </li>
           
         </ul>
-        <button onClick={goSpotify} className={`${openedMenu ? '-mt-32' : 'mt-4'} md:hidden w-full  flex justify-center  px-4  font-normal transition-all ease-in-out duration-300`}><Image
+        <button onClick={goSpotify} className={`${openedMenu ? '-mt-32' : 'mt-8'} md:hidden w-full  flex justify-center  px-4  font-normal transition-all ease-in-out duration-300`}><Image
               src={spotify}
               width={45}
               height={45}
