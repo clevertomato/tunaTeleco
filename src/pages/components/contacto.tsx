@@ -59,7 +59,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
         message
       }
 
-      api.post('/mail', formData)
+      api.post('/api', formData)
       .then((response) => {
         console.log(response);
         setName('');
