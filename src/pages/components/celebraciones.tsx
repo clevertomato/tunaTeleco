@@ -78,7 +78,7 @@ export default function Celebraciones() {
         <div className='h-full w-full  sm:text-sm md:text-sm md3:text-base xl:text-xl 3xl:text-3xl flex flex-col relative md:border-left-bottom-left2 3xl:border-left-bottom-left'>
             <div className={`${active ? 'md:ml--100 md:m-0' : ''} h-full w-full pb-0 md:pb-4  lg:absolute z-10 flex flex-col justify-between transition-all ease-in-out delay-300 duration-500 `}>
                 <div className='grid place-content-center py-8 md:py-0 pb-4'>
-                    <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>¿Quieres hacer que tu evento o celebración sea inolvidable?</p>
+                    <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2 '>¿Quieres hacer que tu evento o celebración sea inolvidable?</p>
                 </div>
 
 

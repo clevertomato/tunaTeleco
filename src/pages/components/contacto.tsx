@@ -80,7 +80,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
 
 
   return (
-  <div className="h-contacto w-auto contacto-bg  flex items-center justify-center shadow-inset-y" ref={ref}>
+  <div id='contacto' className="h-contacto w-auto contacto-bg  flex items-center justify-center shadow-inset-y" ref={ref}>
     <div className='h-contacto-form md:h-auto w-full flex md:flex-row flex-col gap-4 py-4'>
       <div className='md:w-4/6 flex flex-col justify-between align-middle items-end px-8 md:pr-0 md:py-8'>
         <div className='h-full md:w-4/6 3xl:w-3/5 w-full flex flex-col justify-between gap-4' >

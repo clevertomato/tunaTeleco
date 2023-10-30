@@ -31,7 +31,6 @@
     place-content: end;
   }
 }
-
   .border-right-top-right {
     position: relative;
   }
@@ -121,7 +120,7 @@ margin-top: 0.12rem;
     background-color: white;
   }
   .border-b-3 {
-    border-bottom-width: 3px;
+    border-bottom-width: 2.2px;
   }
   .satelliteanimation{
     padding: 20%;
@@ -144,6 +143,12 @@ margin-top: 0.12rem;
   .noteanimation_note {
 
     animation: bounce .5s linear alternate infinite;
+  }
+  .fade-outAni{
+    animation: fade-out 1s forwards;
+  }
+  .fade-inAni{
+    animation: fade-in 1s forwards;
   }
   .scaleout{
     animation: scaleOut 0.7s;
@@ -178,10 +183,59 @@ margin-top: 0.12rem;
     -moz-box-shadow: inset 2px 2px 13px 0px rgba(22, 22, 22, 0.5);
     box-shadow: inset 2px 2px 13px 0px rgba(22, 22, 22, 0.5);
   }
+  .shadow-inset-letters{
+    -webkit-box-shadow: inset 2px 2px 8px 0px rgba(22, 22, 22, 0.5);
+    -moz-box-shadow: inset 2px 2px 8px 0px rgba(22, 22, 22, 0.5);
+    box-shadow: inset 1px 1px 5px 0px rgba(22, 22, 22, 0.5);
+  }
   .shadow-inset-y{
     box-shadow: 
     inset 0px 17px 30px -15px #000000,
     inset 0px -17px 15px -15px #000000; 
+  }
+  .shadow-inset-top{
+    -webkit-box-shadow: inset 0 15px 15px -15px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 0 15px 15px -15px rgba(0,0,0,0.7);
+    box-shadow: inset 0 15px 15px -15px rgba(0,0,0,0.7);
+  }
+  .shadow-inset-top-md{
+    -webkit-box-shadow: inset 0 350px 250px -230px rgba(0,0,0,7);
+    -moz-box-shadow: inset 0 350px 250px -230px rgba(0,0,0,7);
+    box-shadow: inset 0px -270px 250px -140px rgba(0, 0, 0, 0.95), inset 0px 200px 250px -140px rgba(0, 0, 0, 0.95);
+  }
+  .shadow-inset-top-lg{
+    -webkit-box-shadow: inset 0 350px 250px -230px rgba(0,0,0,7);
+    -moz-box-shadow: inset 0 350px 250px -230px rgba(0,0,0,7);
+    box-shadow: inset 0 340px 250px -140px rgba(0,0,0,0.95), inset 0px -30px 40px -20px rgba(0,0,0,0.6); 
+    
+  }
+  .shadow-inset-top2{
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.7);
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.7);
+  }
+  .floatImageL{
+    float: left; 
+margin-top: 8px;
+margin-right: 1rem;
+margin-bottom: 8px;
+  }
+  .floatImageR{
+    float: right; 
+margin-top: 8px;
+margin-left: 1rem;
+margin-bottom: 8px;
+  }
+  .floatText{
+    text-align: justify; 
+      font-size: 17px; 
+  }
+  .floatTextSM{
+    text-align: justify; 
+      font-size: 15px; 
+  }
+  .textSM{
+    font-size: 15px; 
   }
   .ml--100{
     margin-left: -100%;
@@ -195,11 +249,22 @@ margin-top: 0.12rem;
     background-repeat: no-repeat;
     background-position: center; 
   }
+  .historia-bg{
+    background-image: url('../img/blurry-bg.svg');
+    background-size: cover;
+background-position: 0;
+  }
   .form-bg{
     background-image: url('../img/peaks-bg2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
+  }
+  .form-bg-fixed{
+    background-image: url('../img/peaks-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .capa-bg{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/telecocapa.jpg');
@@ -219,6 +284,10 @@ margin-top: 0.12rem;
     background-repeat: no-repeat;
     background-position: center; 
     opacity: 50;
+  }
+  .historia-nav-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url('../img/escenariohorizontal.jpg') no-repeat center;
+    background-size: cover;
   }
   .apuntate-bg-back{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/publico.jpeg');
@@ -293,6 +362,9 @@ textarea {
 
 .shadowtext{
   text-shadow: 1px 2px 2px black;
+}
+.shadowNav{
+  text-shadow: 0px 0px 3px black;
 }
 .shadowtextwhite{
   text-shadow: 1px 1px 2px white;
@@ -463,6 +535,15 @@ height: 10%;
   min-height: 350px;
   max-height: 2000px;
 }
+.h-historia{
+  height: 100vh;
+  min-height: 500px;
+  max-height: 5000px;
+}
+.h-cancionero{
+  min-height: 100vh;
+  max-height: 25000px;
+}
 .h-contacto{
   min-height: 750px;
   max-height: 2000px;
@@ -616,6 +697,17 @@ height: 10%;
     background: transparent;
   }
 }
+@keyframes changeBackgroundResize {
+  from {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(104, 3, 102, 0.2)), url('../img/telecoactos.jpg');
+    border-width: 2px;
+    border-color:white;
+} to {
+    background-image: none;
+    border-width: 0px;
+    background: transparent;
+  }
+}
 
 @keyframes changeBackgroundNotActiveResize {
   from {
@@ -674,3 +766,30 @@ to{
   }
 }
 
+@keyframes fade-out {
+  to{
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  to{
+    display: block;
+    opacity: 100;
+  }
+} 
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+} 
+.animation-float{
+  animation: float 6s ease-in-out infinite;
+}

@@ -38,7 +38,7 @@ export default function Quesomos() {
             </Slide>
             <Slide right duration={1500}>
                 <div className='grid place-content-center md:-mt-2 pt-2 pb-8 md:py-0'>
-                <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2'>Te arreglamos el wifi y te tocamos una canción</p>
+                <p className='text-white text-md md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatexto overflow-hidden text-center border-2 border-x-0 border-my- grid place-content-center py-2 '>Te arreglamos el wifi y te tocamos una canción</p>
                 </div>
             </Slide>
             </div>

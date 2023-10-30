@@ -1,12 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import logoupv from '../../img/UPV.gif';
-import email from '../../img/email.svg'
 import Carousel from './carousel/carousel';
+import Footer from './footer/footer';
 function Apuntate() {
-  const goUpv = () => {
-    window.open('https://www.upv.es/es', "_blank", "noreferrer");
-  };
 
   return (
     <div className=' h-quienes md:h-auto w-full  border-t-2 border-white '>
@@ -16,7 +12,7 @@ function Apuntate() {
             </div>
             <div className='h-min md:h-full w-full md:w-1/2 flex flex-col md:justify-between gap-8 form-bg'>
               <div className="text-xl md:text-3xl text-white grid place-content-center w-full mt-4 md:m-0 md:pt-8 pt-4 px-8">
-                  <p className='text-center border-y-2 py-1 px-2'>ÚNETE A LA TUNA</p>
+                  <p className='text-center border-y-2 py-1 px-2 '>ÚNETE A LA TUNA</p>
               </div>
               <div className='md:h-2/6 h-min grid place-content-center px-8  md:px-16'>
                <p className=' text-black text-lg text-center '>Si tienes pasión por la música, ansías explorar nuevos horizontes, disfrutas de las aventuras y buscas la oportunidad de conocer personas increíbles, entonces este es el lugar para ti. 
@@ -31,37 +27,7 @@ function Apuntate() {
               </div>
             </div>
         </div>
-       <div className='apuntate-bg-back w-auto h-full flex md:flex-row flex-col justify-between text-white border-t-2 px-8 text-base md:text-xl py-4'>
-          <div className='md:hidden h-12 md:h-32 px-auto flex flex-row items-center gap-1 justify-center'>
-          <p className='md:mr-8'>TunaTeleco Copyright 2023 </p>
-            </div>
-          <div className='h-12 md:h-28 px-auto flex flex-row items-center gap-1 justify-center mt-2'>
-            <p className='md:block hidden md:mr-8 text-center'>TunaTeleco Copyright 2023 </p>
-            <Image
-                src={email}
-                alt="email"
-                style={{ height:'20px',width:'20px', marginTop:'auto', marginBottom: 'auto'}} // optional
-            />    
-            <p>tunateleco@gmail.com </p>
-          </div>
-          <div className='h-24 md:h-28 md:px-8 flex flex-row items-center justify-center gap-1 md:p-2 mt-2'>
-          <p className='mr-8 text-center '>Universidad Politécnica de Valencia </p>
-          <button onClick={goUpv} className='hidden md:block'>          <Image
-              src={logoupv}
-              alt="logoupv"
-              onClick={goUpv}
-              style={{ height:'5rem',width:'5rem'}} // optional
-        /></button>
-        <button onClick={goUpv} className='flex md:hidden justify-end'>          <Image
-              src={logoupv}
-              alt="logoupv"
-              onClick={goUpv}
-              style={{ height:'50%',width:'50%'}} // optional
-        /></button>
-
-  </div>
-          
-        </div>
+       <Footer></Footer>
     </div>
   )
 }
