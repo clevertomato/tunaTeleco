@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
-import { canciones } from './canciones';
+import { canciones } from '../../src/canciones';
 import HeaderNotMain from './components/header/headerNotMain';
 import Link from 'next/link';
 import Footer from './components/footer/footer';
