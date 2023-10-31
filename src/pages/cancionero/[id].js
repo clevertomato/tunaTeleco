@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import HeaderNotMain from '../components/header/headerNotMain';
 import Footer from '../components/footer/footer';
+import pandereta from '../../img/pandereta.svg';
+import Image from 'next/image';
 
 const DynamicContent = () => {
   const router = useRouter();
@@ -59,11 +61,27 @@ const DynamicContent = () => {
           </div>
         </div>
       <div className="w-full flex justify-center h-auto flex-row">
-        <div className='w-1/6 max-h-max flex justify-center items-end text-white'>< div className=' animation-float'>Lado</div></div>
-        <ul className="w-4/6 flex flex-col p-8  gap-2 h-auto shadow-lg border-2 bg-white/10 rounded-sm">
+      <div className='hidden w-1/6 max-h-max md:flex justify-center items-end text-white mt-20'>< div className='drop-shadow-xl'><Image
+                  src={pandereta}
+                  width={100}
+                  height={100}
+                  alt="logoupv"
+                  className="image-with-shadow"
+                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem',filter: 'brightness(0) invert(1)'}}
+            /></div>
+        </div>
+        <ul className="w-5/6 flex flex-col p-4 md:p-8 md:py-6  gap-2 h-auto shadow-lg border-2 bg-white/10 rounded-sm">
         <div dangerouslySetInnerHTML={{ __html: formattedSong }} />
         </ul>
-        <div className='w-1/6 max-h-max flex justify-center items-end text-white'>< div className=' animation-float'>Lado</div></div>
+        <div className='hidden w-1/6 max-h-max md:flex justify-center items-end text-white mt-20'>< div className='drop-shadow-xl'><Image
+                  src={pandereta}
+                  width={100}
+                  height={100}
+                  alt="logoupv"
+                  className="image-with-shadow"
+                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem',filter: 'brightness(0) invert(1)'}}
+            /></div>
+        </div>
       </div>
       <Footer/>
     </div>

@@ -63,7 +63,7 @@ export default function HeaderNotMain({type }) {
         </ul>
         
       </div>
-      <div className={`${openedMenu ? 'mb-12' : 'mb-4'} flex items-center justify-between md:hidden w-full h-20 transition-all duration-300`}>
+      <div className={`${openedMenu ? 'mb-12' : 'mb-4'} flex items-center justify-between md:hidden w-full h-20 transition-all duration-500`}>
         <div className='py-4 flex flex-row text-2xl text-black px-1 pb-1 float-right transform hover:cursor-pointer font-normal ease-in-out border-b-3 border-white hover:border-my-orange-clear hover:shadow-sm transition-all duration-400 ml-4' >
           <Link className='py-auto' href='/'>
             <p className=' text-white'>TUNATELECO</p>
@@ -71,28 +71,28 @@ export default function HeaderNotMain({type }) {
         </div>
  
         <div onClick={openMenu} className="w-1/3 grid place-content-end h-full py-auto">
-          <div className={`${openedMenu ? 'space-y-2 ' : ''} w-1/2 px-6 py-1 hover:cursor-pointer transition-all duration-300 h-full`}>
-            <div className={`${openedMenu ? '' : 'origin-center rotate-45 absolute mt-05'} -ml-8 w-8 h-0.5 bg-white transition-all duration-300 mt-4`}></div>
-            <div className={`${openedMenu ? '' : 'opacity-0'}  -ml-8 w-8 h-0.5 bg-white diagonal-fractions transition-all duration-300 `}></div>
-            <div className={`${openedMenu ? '' : 'origin-center -rotate-45 absolute'} -ml-8 w-8 h-0.5 bg-white rounded-xl transition-all duration-300 mb-4`}></div>
+          <div className={`${openedMenu ? 'space-y-2 ' : ''} w-1/2 px-6 py-1 hover:cursor-pointer transition-all duration-500 h-full`}>
+            <div className={`${openedMenu ? '' : 'origin-center rotate-45 absolute mt-05'} -ml-8 w-8 h-0.5 bg-white transition-all duration-500 mt-4`}></div>
+            <div className={`${openedMenu ? '' : 'opacity-0'}  -ml-8 w-8 h-0.5 bg-white diagonal-fractions transition-all duration-500 `}></div>
+            <div className={`${openedMenu ? '' : 'origin-center -rotate-45 absolute'} -ml-8 w-8 h-0.5 bg-white rounded-xl transition-all duration-500 mb-4`}></div>
           </div>
         </div>
 
       </div>
-      <div className={`${openedMenu ? '-mt-36 pb-20' : 'mt-12'} md:hidden w-full  flex flex-col  px-4 pr-4 font-normal transition-all ease-in-out duration-300`}>
+      <div className={`${openedMenu ? '-mt-36 pb-20' : 'mt-12'} md:hidden w-full  flex flex-col  px-4 pr-4 font-normal transition-all ease-in-out duration-500`}>
         <ul className='w-full h-full text-xl flex flex-row justify-between'>
-          <Link href="/cancionero"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+          <Link href="/cancionero"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-500  grid place-content-end`}>
             <p className='border-b-3 border-white text-center pb-1 text-white' >CONTACTO</p>
           </li></Link>
-          <Link href="/cancionero"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+          <Link href="/cancionero"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-500  grid place-content-end`}>
             <p className={`border-b-3  text-center pb-1   ${type === 'cancionero' ? 'border-white/40 text-white/40 hover:cursor-default' : 'border-white text-white'}`}>CANCIONERO</p>
           </li></Link>
-          <Link href="/historia"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-300  grid place-content-end`}>
+          <Link href="/historia"><li className={`${openedMenu ? 'opacity-0' : 'opacity-100'} transition-all ease-in-out duration-500  grid place-content-end`}>
           <p className={`border-b-3  text-center pb-1   ${type === 'historia' ? 'border-white/40 text-white/40 hover:cursor-default' : 'border-white text-white'}`}>HISTORIA</p>
           </li></Link>
           
         </ul>
-        <div className={`${openedMenu ? '-mt-32 pb-8' : 'mt-8'} md:hidden flex flex-row transition-all ease-in-out duration-300`}>
+        <div className={`${openedMenu ? '-mt-32 pb-8' : 'mt-8'} md:hidden flex flex-row transition-all ease-in-out duration-500`}>
           <div className="w-full  flex justify-end  px-4"><Image
                   src={instagram}
                   onClick={goInstagram}

@@ -11,8 +11,8 @@ import Image from 'next/image';
 function Cancionero() {
   const [letraInicial, setLetraInicial] = useState('');
   const [seleccionadas, setSeleccionadas] = useState([]);
-  const [currentLetter, setCurrentLetter] = useState('');
   const [name, setName] = useState('');
+  const [filter, setFilter] = useState('');
   let letter='A-Z'
   let abecedario = Array.from({ length: 26 }, (_, i) =>
     String.fromCharCode(65 + i)
@@ -44,6 +44,14 @@ function Cancionero() {
     setLetraInicial(letra);
     setSeleccionadas(canciones.filter((cancion) => cancion[0].startsWith(letra)));
     router.push("/cancionero" + "?" + createQueryString("letter", letra));
+  };
+  const setSearch = (e) => {
+    setSeleccionadas([]);
+    let seleccion = canciones.filter((cancion) => cancion[0].toLowerCase().includes(e.toLowerCase()));
+    console.log(seleccion);
+    setSeleccionadas(seleccion);
+    setFilter(e);
+    router.push("/cancionero" + "?" + createQueryString("search", e));
   };
   const setSeleccionTodas = () => {
     setLetraInicial('A-Z');
@@ -120,12 +128,10 @@ function Cancionero() {
           <input
             type="text"
             name="full_name"
-            id="full_name"
             className="text-lg text-gray-100 bg-black/50 h-10 border md:border-2 mt-1 mb-1 rounded-sm px-4 w-full border-white shadow-inset"
-            placeholder="Buscar cancion..."
             required
-            value={name}
-            onChange={(event) => setName(event.target.value)}
+            value={filter}
+            onChange={event => setSearch(event.target.value)}
           />
         </div>
       </div>
@@ -140,7 +146,7 @@ function Cancionero() {
             /></div>
         </div>
         <ul className="w-full  lg:w-4/6 flex flex-col p-4 md:p-8 md:py-6  gap-2 h-auto shadow-lg  bg-white/10 rounded-sm border md:border-2">
-        <li className="text-3xl border-white border-b-2 pb-1 mb-4">{letraInicial}</li>
+        {filter.length === 0 ? <li className="text-3xl border-white border-b-2 pb-1 mb-4">{letraInicial}</li> : null}
           {letraInicial !== 'A-Z' ? seleccionadas.map((cancion, index) => {
             if (cancion[0].length !== 1) {
               return(<Link href={`/cancionero/[id]`} as={`/cancionero/${cancion[1]}`} className='w-fit'><li key={index} className="h-8 text-md hover:text-white hover:scale-110 transition-all duration-100 py-1 px-1 hover:ml-3 hover:border-b-2">
@@ -148,8 +154,8 @@ function Cancionero() {
             </li></Link>)}
         }):null}
           {letraInicial === 'A-Z'
-            ? canciones.map((cancion, index) => {
-                if (cancion[0].length == 1) {
+            ? seleccionadas.map((cancion, index) => {
+                if (cancion[0].length == 1 && filter.length === 0) {
                   return(<li className="text-2xl border-white border-b-2 pb-1 mb-4 w-min px-2 text-white">{cancion}</li>)   
                 } else {
                   return (
