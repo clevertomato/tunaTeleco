@@ -17,7 +17,7 @@ module.exports = {
         'my-white': '#171717',
         'my-black': '#303336',
         'my-orange': '#F5730A',
-        'my-orange-clear': '#ff6733',
+        'my-orange-clear': '#ff703f',
         'my-orange-100': '#FEF2D1',
         'my-orange-200': '#FEE1A4',
         'my-orange-300': '#FCCB77',

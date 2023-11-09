@@ -46,12 +46,13 @@ function Historia() {
     <div className='form-bg-fixed  w-full flex flex-col gap-8 shadow-inset-top-lg shadow-inset-top-md  pb-4'>
         <HeaderNotMain type={'historia'} />
         <div className='w-5/6 mx-auto h-1/4 mt-4'>   
-          <div className=' border md:border-2 h-56 md:h-40 historia-nav-bg relative'>
-            <div className='w-full h-full lg:pl-4 md:px-8 text-white text-center absolute bottom-0 left-0 grid place-content-center py-8'>
-                <div className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-2 border-x-0 font-beautique'>Historia de</div>
-                <div className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-b-2'>La tuna</div>
-            </div>
-          </div>
+        <div className='border md:border-2 h-56 md:h-40 historia-nav-bg relative'>
+        <div className='w-full h-full lg:pl-4 md:px-8 text-white text-center absolute bottom-0 left-0 grid place-content-center py-8'>
+          <h1 className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-2 border-x-0 font-beautique flex flex-col'>
+            <span className=''>Historia</span><span  className='border-t-2'>de La tuna</span>
+          </h1>
+        </div>
+      </div>
         </div>
         <div className='flex flex-wrap md:flex-row justify-between  w-5/6 mx-auto text-white text-base lg:text-2xl'>
           <button className={`${historia ? 'cursor-auto bg-black/30' : 'bg-white/10 shadow-gray-900/70 hover:cursor-pointer hover:bg-black/10'}   py-1 border md:border-2 drop-shadow-lg shadow-sm   hover:shadow-none mx-auto my-2 w-2/5 md:w-auto md:px-2  transition-all duration-100`} onClick={clickActiveHistoria}> 

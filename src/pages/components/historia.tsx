@@ -6,6 +6,9 @@ function HistoriaPart({active}) {
   return (
     <div className={`${active ? 'opacity-100' : 'opacity-0'} transition-all duration-300 h-auto md:px-24  md:pb-4 w-5/6 mx-auto  mb-4 `}>
             <div className='h-auto w-full  bg-white/10 p-4 md:p-8 md:py-6 rounded-sm border md:border-2 shadow-lg'>
+            <div className='w-auto lg:pl-4 md:px-8 text-white text-center grid place-content-center pb-8 pt-4'>
+                <h1 className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-y-2 border-x-0 font-beautique'>Historia</h1>
+            </div>
             <p className='floatText drop-shadow-lg '> En el año 1.212, bajo el reinado de <span className="font-semibold">Alfonso VIII</span>, se fundó en Palencia el primer <span className="font-semibold">"Studium generale"</span>, precedente de lo que más tarde serían las Universidades. A estos Estudios Generales y a los que sucesivamente se crearon, acudían jóvenes de toda condición entre los que surgieron los <span className="font-semibold">SOPISTAS</span>, predecesores de los actuales tunos.</p>
               <br/>
               <div className='hidden md:block floatImageL border-2 bg-white/70'>

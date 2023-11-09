@@ -27,9 +27,9 @@ export default function HeaderNotMain({type }) {
     <div id='navBar' className="z-20  top-0 right-0 w-full transition-all ease-in-out delay-300 duration-500 md:shadow-inset-top ">
       <div className='hidden md:flex items-center justify-between w-full'>
 
-          <Link href="/" className='flex flex-row text-xl lg:text-2xl xl:text-3xl 3xl:text-3xl text-black py-1 float-right transform hover:cursor-pointer font-normal ease-in-out border-b-3 hover:border-my-orange-clear border-white/90 hover:shadow-sm transition-all duration-300 ml-4 shadowNav px-1' >
-            
-            <p className='my-auto font-light text-white hover:drop-shadow-xl '>TUNATELECO</p>
+      <Link href='/' className='py-4 pt-6 pl-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-black/70 font-normal hover:cursor-pointer'>
+        
+        <p className='my-auto text-lg md:text-3xl lg:text-4xl 3xl:text-5xl  overflow-hidden  hover:border-my-orange/60 hover:scale-105 transition-all duration-300  text-white px-1 hover:shadow-black drop-shadow-lg border-y-2 border-white pb-1' >TUNATELECO</p>
         </Link>
           <div className='ml-2 filter drop-shadow-lg hover:drop-shadow-xl shadow-white hover:cursor-pointer hover:scale-105 transition-all duration-150' onClick={goInstagram}><Image
                   src={instagram}
@@ -37,7 +37,7 @@ export default function HeaderNotMain({type }) {
                   height={48}
                   alt="logoupv"
                   className="image-with-shadow"
-                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: '', filter: 'brightness(0) invert(1)'}}
+                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: ''}}
             /></div>
           <div className='hover:cursor-pointer hover:scale-105 transition-all duration-150 drop-shadow-lg hover:drop-shadow-xl'><Image
               src={spotify}

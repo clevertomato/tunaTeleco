@@ -9,6 +9,9 @@ function Costumbres({active}) {
   return (
     <div className={` ${active ? 'delay-300 opacity-100 h-auto' : 'opacity-0 h-0'} transition-all duration-300  md:px-24  md:pb-4 w-5/6 mx-auto  mb-4`}>
         <div className='h-auto w-full  bg-white/10 p-4 md:p-8 md:py-6 rounded-sm border md:border-2 shadow-lg'>
+        <div className='w-auto lg:pl-4 md:px-8 text-white text-center grid place-content-center pb-8 pt-4'>
+                <h1 className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-y-2 border-x-0 font-beautique'>COSTUMBRES</h1>
+            </div>
         <p className='floatText drop-shadow-lg '> 
         A lo largo de la Historia, pocas son las instituciones que han mantenido tan fielmente sus costumbres y tradiciones como lo han hecho las Tunas de todo el mundo. El <span className="font-semibold">Espíritu Estudiantil</span> se ha ido pasando de generación en generaci ón, desde los primeros sopistas que habían de sobrevivir gracias a su astucia y habilidad, hasta la época actual, donde -pese a lo que pudiera imaginarse-, el sentimiento iniciático y enriquecedor de la Tuna en la Vida Universi taria está <span className="font-semibold">más vivo que nunca</span>. Como es obvio, muchas de las tradiciones han mudado de forma, han desaparecido o se han creado al devenir del tiempo, pero todas ellas son fieles a unos ideales comunes.
         Podemos distinguir entre otros, los siguientes Usos y Faciendas:

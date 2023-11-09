@@ -29,6 +29,9 @@ function Instrumentos({active}) {
   return (
     <div className={`${active ? 'm-0' : 'ml-72 transition-all duration-300'} transition-all duration-300 h-auto md:px-24  md:pb-4 w-5/6 mx-auto  mb-4`}>
     <div className='h-auto w-full bg-white/10 md:p-8 p-4 md:py-6 rounded-sm border-2 shadow-lg'>
+    <div className='w-auto lg:pl-4 md:px-8 text-white text-center grid place-content-center pb-8 pt-4'>
+        <h1 className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-y-2 border-x-0 font-beautique'>INSTRUMENTOS</h1>
+    </div>
     <p className="floatText drop-shadow-lg">
     En la Tuna española tenemos dos tipos de intrumentos básicos. Por un lado está la <span className="font-semibold underline underline-offset-2 hover:cursor-pointer" onClick={scrollToGuitar}>Guitarra</span> que se utiliza como acompañamiento de la melodía. La melodía la crean las voces y los cantos, entre los cuales destacan principalmente el <span className="font-semibold underline underline-offset-2 hover:cursor-pointer" onClick={scrollToLaud}>Laúd</span> y la <span className="font-semibold underline underline-offset-2 hover:cursor-pointer" onClick={scrollToBandurria}>Bandurria</span>. No nos podemos olvidar sin embargo del instrumento más característico de nuestra música que es la pandereta, sin ninguna duda.
     </p>

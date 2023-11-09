@@ -84,7 +84,7 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
     <div className='h-contacto-form md:h-auto w-full flex md:flex-row flex-col gap-4 py-4'>
       <div className='md:w-4/6 flex flex-col justify-between align-middle items-end px-8 md:pr-0 md:py-8'>
         <div className='h-full md:w-4/6 3xl:w-3/5 w-full flex flex-col justify-between gap-4' >
-          <div className="text-2xl md:text-3xl text-white grid place-content-center w-full mt-4 md:m-0">
+          <div className="text-2xl md:text-xl lg:text-2xl text-white grid place-content-center w-full mt-4 md:m-0">
             <h2 className='text-center p-2 border-y-2'>¡Contacta con nosotros!</h2>
           </div>
           {showError && <ErrorMessage error={error} />} {/* Conditionally render error message */}
@@ -126,60 +126,60 @@ const Contacto = forwardRef<HTMLDivElement>((props, ref) => {
         
       </div>
       <div className='md:w-1/2 flex flex-col justify-between align-middle items-start py-8 md3:pr-28'>
-        <div className="md2:w-5/6 md3:w-4/6 3xl:w-3/6 w-full flex flex-col items-start h-full gap-4 px-8 ">
+        <div className=" md3:w-full lg:w-5/6 xl:w-4/6 3xl:w-4/6 md:w-5/6 w-full flex flex-col items-start h-full gap-4 px-8 md:pl-8 ">
           <div className='w-full'>
-            <div className="text-2xl md:text-3xl text-white grid place-content-center w-full ">
+            <div className="text-2xl md:text-xl lg:text-2xl text-white grid place-content-center w-full ">
               <h2 className='text-center p-2 border-y-2'>¡Llámanos!</h2>
             </div>
           </div>
           <div className='w-full h-full flex flex-col justify-between '>
           <div className='h-full capa-bg text-white  h-contacto-foto lg:h-contacto-foto2  w-full border-2 flex flex-row mb-4 md:m-0 rounded-sm rounded-b-none shadow-lg'>
-                <div className='h-full w-1/2 border-r-2'>
+                <div className='h-full w-1/3 md:w-2/5 border-r-2'>
                       <Image
                       src={sheeran}
                       alt="sheeran"
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8'>
-                  <li className='text-left text-xl mx-auto'>
+                <ul className=' flex flex-col justify-between w-3/5 px-4 py-4 md2:py-1 md3:py-4 lg:py-6 xl:py-6 2xl:py-8'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                       Sheeran (Pablo)
                   </li>
-                  <li className='text-left text-xl mx-auto'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                     ☏ 620178222
                   </li>
                 </ul>
             </div>
             <div className=' capa-bg text-white h-contacto-foto lg:h-contacto-foto2 h-min w-full border-2 flex flex-row  mb-4 md:m-0 rounded-sm rounded-y-none shadow-lg'>
-                <div className='h-full w-1/2 border-r-2'>
+                <div className='h-full w-1/3 md:w-2/5 border-r-2'>
                       <Image
                       src={barato}
                       alt="barato"
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8'>
-                  <li className='text-left text-xl mx-auto'>
+                <ul className=' flex flex-col justify-between w-3/5 px-4 py-4 md2:py-1 md3:py-4 lg:py-6 xl:py-6 2xl:py-8'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                       Barato (Pedro)
                   </li>
-                  <li className='text-left text-xl mx-auto'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                     ☏ 620178222
                   </li>
                 </ul>
             </div>
             <div className='capa-bg text-white h-contacto-foto lg:h-contacto-foto2 w-full border-2 flex flex-row rounded-sm rounded-t-none shadow-lg'>
-                <div className='h-full w-1/2 border-r-2'>
+                <div className='h-full w-1/3 md:w-2/5 border-r-2'>
                       <Image
                       src={hodor}
                       alt="hodor"
                       style={{ height: '100%', width: '100%', objectFit:'cover', border: '2px', borderColor: '#fff'}}
                     />
                 </div>
-                <ul className=' flex flex-col justify-between w-full px-4 py-4 md:py-8'>
-                  <li className='text-left text-xl mx-auto'>
+                <ul className=' flex flex-col justify-between w-3/5 px-4 py-4 md2:py-1 md3:py-4 lg:py-6 xl:py-6 2xl:py-8'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                       Hodor (Santi)
                   </li>
-                  <li className='text-left text-xl mx-auto'>
+                  <li className='text-left text-sm lg:text-base 2xl:text-xl mx-auto'>
                     ☏ 620178222
                   </li>
                 </ul>

@@ -532,8 +532,15 @@ height: 10%;
 }
 .h-quienes{
   height: 80vh;
-  min-height: 350px;
+  min-height: 450px;
   max-height: 2000px;
+}
+.h-celebraciones{
+  min-height: 600px;
+  max-height: 2000px;
+}
+.h-apuntateContainer{
+  min-height: 500px;
 }
 .h-historia{
   height: 100vh;
@@ -596,6 +603,10 @@ height: 10%;
     height: auto;
     max-height: 1230px;
   }
+  .h-celebraciones{
+    height: auto;
+    max-height: 1230px;
+  }
   .h-valores{
     height: auto;
     max-height: 1230px;
@@ -622,6 +633,10 @@ height: 10%;
     height: auto;
     max-height: 3000px;
   }
+  .h-celebraciones{
+    height: auto;
+    max-height: 3000px;
+  }
   .h-valores{
     height: auto;
     max-height: 2500px;
@@ -641,6 +656,11 @@ height: 10%;
   }
 }
 
+@media only screen and (min-width: 1750px ) {
+  .h-celebraciones {
+min-height: 650px;
+}
+}
 .valores-text{
   letter-spacing: 0.3em;
   text-indent: 0.3em;

@@ -27,16 +27,17 @@ export default function Header({ showNav, scrollToForm }) {
     <div id='navBar' className={`${!showNav ? 'opacity-0' : 'opacity-100 '}  z-20  top-0 right-0 w-full transition-all ease-in-out delay-300 duration-500 absolute`}>
       <div className='hidden md:flex items-center justify-between w-full'>
 
-          <div className='flex flex-row text-xl lg:text-2xl xl:text-3xl 3xl:text-3xl text-white  py-1 float-right transform hover:cursor-pointer font-normal ease-in-out border-b-3 border-transparent border-white hover:border-my-orange hover:shadow-sm transition-all duration-400 ml-4 my-auto px-1'>
-            <p className='my-auto font-light'>TUNATELECO</p>
-          </div>
+      <div className='py-4 pl-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-black/70 font-normal '>
+        
+        <p className='my-auto text-lg md:text-3xl lg:text-4xl 3xl:text-5xl  overflow-hidden  hover:border-my-orange/60 hover:scale-105 transition-all duration-300 hover:cursor-default text-white px-1 hover:shadow-black drop-shadow-lg border-y-2 border-white pb-1' >TUNATELECO</p>
+        </div>
           <div onClick={goInstagram} className='hover:drop-shadow-lg hover:cursor-pointer hover:scale-105 transition-all duration-150'><Image
                   src={instagram}
                   width={55}
                   height={55}
                   alt="logoupv"
                   className="image-with-shadow"
-                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: '',filter: 'brightness(0) invert(1)'}}
+                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: ''}}
             /></div>
             <div className='filter hover:drop-shadow-lg shadow-white hover:cursor-pointer hover:scale-105 transition-all duration-150'><Image
               src={spotify}
@@ -48,9 +49,9 @@ export default function Header({ showNav, scrollToForm }) {
         /></div>
         <ul className='py-4 pl-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-black/70 font-normal '>
         
-          <li className='my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 shadow-black drop-shadow-lg my' onClick={scrollToForm} >CONTACTO</li>
-          <Link href="/cancionero" className="my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 shadow-black drop-shadow-lg"><li > CANCIONERO</li></Link>
-          <Link href="/historia" className="my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 shadow-black drop-shadow-lg"><li > HISTORIA</li></Link>
+          <li className='my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 2xl:pb-1 shadow-black drop-shadow-lg my' onClick={scrollToForm} >CONTACTO</li>
+          <Link href="/cancionero" className="my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 2xl:pb-1 shadow-black drop-shadow-lg"><li > CANCIONERO</li></Link>
+          <Link href="/historia" className="my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden border-b-3  border-white/90  hover:border-my-orange/60 hover:shadow-sm transition-all duration-300 hover:cursor-pointer text-white px-1 2xl:pb-1 shadow-black drop-shadow-lg"><li > HISTORIA</li></Link>
           <li className='hover:cursor-pointer mr-3 hover:scale-105 transition-all duration-150 hover:drop-shadow-lg'><Image
               src={logoupv}
               width={80}
@@ -97,7 +98,7 @@ export default function Header({ showNav, scrollToForm }) {
                   width={45}
                   height={45}
                   alt="logoupv"
-                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: '', filter: 'brightness(0) invert(1)'}}
+                  style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem', border: ''}}
             /></div>
             <div className="w-full  flex justify-start  px-4  font-normal "><Image
                   src={spotify}

@@ -4,6 +4,9 @@ function Indumentaria({active}) {
   return (
     <div className={`${active ? 'opacity-100' : 'opacity-0'} transition-all duration-300 h-auto md:px-24  md:pb-4 w-5/6 mx-auto  mb-4 `}>
       <div className='h-auto w-full  bg-white/10 p-4 md:p-8 md:py-6 rounded-sm border md:border-2 shadow-lg'>
+      <div className='w-auto lg:pl-4 md:px-8 text-white text-center grid place-content-center pb-8 pt-4'>
+        <h1 className='text-xl md:text-2xl lg:text-4xl cajatexto overflow-hidden shadowtext text-center border-y-2 border-x-0 font-beautique'>INDUMENTARIA</h1>
+      </div>
       <p className="floatText drop-shadow-lg">
       La vestimenta del tuno es, probablemente, uno de los elementos más representativos y tradicionales de la institución tunesca. Con su característico color negro, y su llamativo aspecto, ha permanecido prácticamente invariante a través de los siglos, siendo similar al vestuario utilizado por los antiguos estudiantes de las primeras universidades españolas.
       </p><br/>
