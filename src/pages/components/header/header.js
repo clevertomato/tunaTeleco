@@ -6,6 +6,7 @@ import instagramMobile from '../../../img/instagramMobile.svg'
 import spotify from '../../../img/spotify.svg'
 import spotifyMobile from '../../../img/spotifyMobile.svg'
 import whatsapp from '../../../img/whatsapp.svg'
+import call from '../../../img/call.svg'
 
 export default function Header({ showNav, scrollToForm }) {
   const [openedMenu, setOpenedMenu] = useState(true);
@@ -26,13 +27,15 @@ export default function Header({ showNav, scrollToForm }) {
   const goUpv = () => {
     window.open('https://www.upv.es/es', "_blank", "noreferrer");
   };
+  const callTo = () => {
+    window.location = 'tel:640630916'
+  };
 
   return (
     <div id='navBar' className={`${!showNav ? 'opacity-0' : 'opacity-100 '} ${openedMenu ? '' : 'bg-black/40'} z-20  top-0 right-0 w-full transition-all ease-in-out  duration-500 absolute`}>
       <div className='hidden md:flex items-center justify-between w-full'>
 
       <div className='py-4 pl-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-12 md:max-md:flex-col text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-black/70 font-normal '>
-        
         <p className='my-auto text-lg md:text-3xl lg:text-4xl 3xl:text-5xl  overflow-hidden  hover:border-my-orange/60 hover:scale-105 transition-all duration-300 hover:cursor-default text-white px-1 hover:shadow-black drop-shadow-lg pb-1' >TUNATELECO</p>
         </div>
         <ul className='py-4 p-6 flex flex-row justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-6 md:max-md:flex-col text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-black/70 font-normal '>
@@ -59,6 +62,15 @@ export default function Header({ showNav, scrollToForm }) {
               alt="logoupv"
               onClick={goWhatsapp}
               style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem'}} // optional
+        /></li>
+                <li className='my-auto hover:drop-shadow-[0_7px_7px_rgba(255,255,255,0.3)] hover:cursor-pointer hover:scale-105 transition-all duration-150'><Image
+              src={call}
+              width={78}
+              height={80}
+              alt="logoupv"
+              onClick={callTo}
+              style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem'}} // optional
+              className=' hover:animate-shake'
         /></li>
           <li className='my-auto text-md md:text-xl lg:text-2xl 3xl:text-4xl  overflow-hidden hover:cursor-pointer hover:scale-105 transition-all duration-150 text-white px-1 2xl:pb-1 shadow-black drop-shadow-lg my' onClick={scrollToForm} >CONTACTO</li>
         </ul>
@@ -89,8 +101,8 @@ export default function Header({ showNav, scrollToForm }) {
             <Image
               src={instagramMobile}
               onClick={goInstagram}
-              width={49}
-              height={49}
+              width={50}
+              height={50}
               alt="logoupv"
               style={{ marginTop: 'auto', marginBottom: 'auto', paddingRight: '0.2rem'}}
             />
@@ -99,8 +111,8 @@ export default function Header({ showNav, scrollToForm }) {
             <Image
               src={spotifyMobile}
               onClick={goSpotify}
-              width={45}
-              height={45}
+              width={50}
+              height={50}
               alt="logo de la upv"
             />
           </li>
@@ -108,8 +120,17 @@ export default function Header({ showNav, scrollToForm }) {
             <Image
               src={whatsapp}
               onClick={goWhatsapp}
-              width={45}
-              height={45}
+              height={35}
+              width={44}
+              alt="logo de la upv"
+            />
+          </li>
+          <li className="w-1/3 flex place-content-center font-normal " onClick={goUpv}>
+            <Image
+              src={call}
+              onClick={callTo}
+              width={50}
+              height={50}
               alt="logo de la upv"
             />
           </li>

@@ -30,7 +30,7 @@ export default function Home() {
           name="description"
           content="Web de La Tuna de Ingenieros de Telecomunicación de Valencia, donde podrás saber más sobre que tipos de eventos realizamos y quienes somos"
         />
-        <link rel="icon" href="/static/logo.ico" />
+        <link rel="icon" href="/static/tunito.ico" />
       </Head>
       <Header showNav={show} scrollToForm={scrollToForm} />
       <Main />
