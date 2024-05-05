@@ -5,7 +5,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ){
-  res.setHeader('Access-Control-Allow-Credentials', true)
+  res.setHeader('Access-Control-Allow-Credentials', 'true')
   res.setHeader('Access-Control-Allow-Origin', 'https://tel101.vercel.app/api')
   res.setHeader('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT')
   res.setHeader(
