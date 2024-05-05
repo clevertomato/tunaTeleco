@@ -56,20 +56,22 @@ export default function Quesomos() {
       </div>
       <div className="md2:hidden grid place-content-start mt-4 pt-2 pb-8 md:py-0 px-12">
         <p className="text-white text-xl md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatextoNoIndent overflow-hidden border-l-2 pl-4 uppercase">
-          Sobre nosotros
+          TE ARREGLAMOS EL WIFI Y TE TOCAMOS UNA CANCIÓN
         </p>
       </div>
       <p className="md2:hidden px-12 pb-4 grid place-content-center letter-spacing-011">
-        Somos una agrupación formada en el año 1992, y desde su creación,
-        llevamos entonanando melodías tradicionales y contemporáneas allá donde
-        haga falta.
+        La Tuna Universitaria de Ingenieros de Telecomunicación de Valencia se
+        formó en el 1992. Desde el principio estos tunos ingenieros alegran a
+        los valencianos entonando melodías tradicionales y contemporáneas,
+        acompañados de guitarras, bandurrias, laúdes y otros instrumentos
+        característicos de la tuna.
       </p>
-      <p className="md2:hidden px-12 pb-8 grid place-content-center letter-spacing-011">
+      {/*<p className="md2:hidden px-12 pb-8 grid place-content-center letter-spacing-011">
         Hemos tocado en infinidad de eventos: certámenes de música, festivales
         culturales, actos falleros, conciertos, fiestas populares... Siempre con
         nuestro atuendo distintivo y energía contagiosa, representando un
         símbolo de la tradición y de la avanguardia en Valencia.
-      </p>
+            </p>*/}
     </div>
   );
 }
