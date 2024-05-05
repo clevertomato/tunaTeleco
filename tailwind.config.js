@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: { 
        dropShadow: {
-         'md': ' 15px 15px 10px 0px rgba(0,0,0,0.75);',
+         'md': ' 15px 15px 10px 0px rgba(0,0,0,1);',
        },
       screens: {
         'md2': '858px',
