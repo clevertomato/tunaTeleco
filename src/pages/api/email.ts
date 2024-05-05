@@ -23,7 +23,6 @@ export default function handler(
       pass: process.env.PASS_EMAIL
     }
   });
-  console.log("mail");
 
   // send mail with defined transport object
   transporter.sendMail({

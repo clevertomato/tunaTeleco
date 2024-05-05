@@ -55,9 +55,9 @@ export default function Quesomos() {
         </div>
       </div>
       <div className="md2:hidden grid place-content-start mt-4 pt-2 pb-8 md:py-0 px-12">
-        <p className="text-white text-xl md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatextoNoIndent overflow-hidden border-l-2 pl-4 uppercase">
+        <h2 className="text-white text-xl md2:2xl md:text-lg lg:text-2xl xl:text-3xl 3xl:text-4xl cajatextoNoIndent overflow-hidden border-l-2 pl-4 uppercase">
           TE ARREGLAMOS EL WIFI Y TE TOCAMOS UNA CANCIÓN
-        </p>
+        </h2>
       </div>
       <p className="md2:hidden px-12 pb-4 grid place-content-center letter-spacing-011">
         La Tuna Universitaria de Ingenieros de Telecomunicación de Valencia se

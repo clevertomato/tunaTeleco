@@ -9,6 +9,9 @@ function Footer() {
   const goUpv = () => {
     window.open('https://www.upv.es/es', "_blank", "noreferrer");
   };
+  const goTunaUpv = () => {
+    window.open('https://tuna.upv.es/', "_blank", "noreferrer");
+  };
   const goEmail = () => {
     window.location = 'mailto:tunateleco@gmail.com'
   };
@@ -28,31 +31,33 @@ function Footer() {
 
           </div>
           <div className='h-24 w-full md:w-auto md:px-8 flex flex-col md:flex-row items-center justify-center gap-1 md:p-2 mt-2'>
-          <button onClick={goUpv} className='hidden md:block'>          <Image
+          <a href='https://www.upv.es/es' onClick={goUpv} className='hidden md:block'>          <Image
               src={marcaUPV}
               alt="logoupv"
               onClick={goUpv}
               style={{ height:'5rem',width:'auto'}} // optional
-        /></button>
+        /></a>
         <div className='flex flex-row align-middle justify-center place-content-center'>
-        <button onClick={goUpv} className='md:hidden pt-2'>          <Image
+        <a href='https://www.upv.es/es' onClick={goUpv} className='md:hidden pt-2'>          <Image
               src={marcaUPV}
               alt="logoupv"
               onClick={goUpv}
               style={{ height:'5rem',width:'auto'}} // optional
-        /></button>
-        <div className='md:hidden'><Image
+        /></a>
+        <a className='md:hidden hover:cursor-pointer' href='https://tuna.upv.es/' onClick={goTunaUpv}><Image
               src={tunito}
               alt="un dibujo de un tunito"
               onClick={goUpv}
               style={{ height:'5rem',width:'auto'}} // optional
-        /></div>
-                          <div className='hidden md:block'>          <Image
+        /></a>
+        <a onClick={goTunaUpv} href='https://tuna.upv.es/' className='hidden md:block hover:cursor-pointer'>          
+          <Image
               src={tunito}
               alt="un dibujo de un tunito"
               onClick={goUpv}
               style={{ height:'4.5rem',width:'auto'}} // optional
-        /></div>
+          />
+        </a>
         </div>
 
   </div>

@@ -23,8 +23,6 @@ const Contacto = forwardRef<HTMLDivElement, propsContact>((props, ref) => {
   function sendEmail(event: FormEvent) {
     var messageText = "";
     if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      console.log(name.trim() + email.trim() + message.trim());
-
       if (name.trim() === "" && email.trim() === "" && message.trim() === "") {
       }
       if (name.trim() === "") {
@@ -65,7 +63,6 @@ const Contacto = forwardRef<HTMLDivElement, propsContact>((props, ref) => {
       axios
         .post("/api/email", formData)
         .then((response) => {
-          console.log(response);
           setName("");
           setEmail("");
           setTelf("");
